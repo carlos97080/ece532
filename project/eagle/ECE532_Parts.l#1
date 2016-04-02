@@ -90,7 +90,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SAV-541+" prefix="Q">
+<deviceset name="SAV-541+">
 <gates>
 <gate name="G$1" symbol="MOS" x="2.54" y="0"/>
 </gates>
