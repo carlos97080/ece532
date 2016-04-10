@@ -1,0 +1,13 @@
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled since there is 'DC'analysis present.
+
+SP SP1[1] <ece532_LNA_lib:Matching_circuit:schematic>   freq=(100 MHz->5 GHz)
+..................................................
+
+DC DC1[1] <ece532_LNA_lib:Matching_circuit:schematic>  
+.
+DC convergence achieved in 65 iterations.
+
+Resource usage:
+  Total stopwatch time     =     0.58 seconds.
+

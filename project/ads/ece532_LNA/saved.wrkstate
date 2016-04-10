@@ -1,0 +1,8 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <DDS name="test_input_circuit.dds"/>
+        <DDS name="Matching_circuit.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

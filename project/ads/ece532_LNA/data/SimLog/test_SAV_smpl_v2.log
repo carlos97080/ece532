@@ -1,0 +1,21 @@
+
+CT Sweep1[1] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>   VGS=(300e-03->700e-03)
+
+DC Sweep1[1].DC2[1/5] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>  VGS=300e-03  VDS=(0->5)
+...................................................
+
+DC Sweep1[1].DC2[2/5] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>  VGS=400e-03  VDS=(0->5)
+...................................................
+
+DC Sweep1[1].DC2[3/5] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>  VGS=500e-03  VDS=(0->5)
+...................................................
+
+DC Sweep1[1].DC2[4/5] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>  VGS=600e-03  VDS=(0->5)
+...................................................
+
+DC Sweep1[1].DC2[5/5] <atf54143_010407_lib:test_SAV_smpl_v2:schematic>  VGS=700e-03  VDS=(0->5)
+...................................................
+
+Resource usage:
+  Total stopwatch time     =     0.59 seconds.
+

@@ -1,0 +1,6 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+INCLUDE $HOME/ECE323_wrk/SAV-541+_model_v4_wrk/lib.defs
+DEFINE ece532_LNA_lib ece532_LNA_lib
+ASSIGN ece532_LNA_lib libMode shared
+INCLUDE $HOME/Desktop/SAV-541+_model_v4_wrk/lib.defs

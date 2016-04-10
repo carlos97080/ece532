@@ -1,0 +1,87 @@
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="ece532_LNA_lib:Matching_circuit:schematic"
+define SAV541_model_smpl_v3 ( G  D  S1  S2 ) 
+;parameters 
+TLIN:TL4  G 77 Z=54 Ohm E=0.8 F=1 GHz 
+C:C12  77 1000 C=0.1 pF 
+L:L11  77 N__4 L=0.35 nH Noise=yes  
+"EEHEMTM1":EE_HEMT1  N__23 N__41 N__42 Ugw=52e-6 N=8 Temp=25 Noise=yes 
+L:L9  N__4 N__1 L=0.4 nH Noise=yes  
+MLIN2:MLIND3  74 N__1 Subst="MSub1" W=70 um L=50 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+model MSub1 MSUB H=100 um Er=12.9 Mur=1 Cond=4.1e7 Hu=3e34 mil T=3 um TanD=0.001 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+R:Rg2  74 N__44 R=1 Ohm Noise=yes 
+R:Rg1  74 N__41 R=1 Ohm Noise=yes 
+MLIN2:MLIN1_5  N__3 N__42 Subst="MSub1" W=100 um L=10 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+L:LS1  N__8 N__3 L=0.12 nH Noise=yes  
+R:Rs1  1000 N__8 R=0.01 Ohm Noise=yes 
+L:LS11  1000 S1 L=0.32 nH Noise=yes  
+"EEHEMTM1":EE_HEMT2  N__23 N__44 N__14 Ugw=52e-6 N=8 Temp=25 Noise=yes 
+MLIN2:MLIN1_4  N__7 N__14 Subst="MSub1" W=100 um L=10 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+L:LS2  N__22 N__7 L=0.12 nH Noise=yes  
+R:Rs2  1001 N__22 R=0.01 Ohm Noise=yes 
+R:Rss1  1000 1001 R=0.001 Ohm Noise=yes 
+MLIN2:MLIND4  N__23 N__20 Subst="MSub1" W=70 um L=50 um Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+R:RD1  N__20 N__18 R=0.04 Ohm Noise=yes 
+L:L8  N__18 N__17 L=0.4 nH Noise=yes  
+L:L10  82 N__17 L=0.35 nH Noise=yes  
+C:C14  1001 82 C=0.1 pF 
+C:CDS1  82 N__21 C=0.15 pF 
+L:LDS1  N__21 S2 L=0.2 nH Noise=yes  
+TLIN:TL3  82 D Z=90 Ohm E=2 F=1 GHz 
+L:LS12  1001 S2 L=0.28 nH Noise=yes  
+model EEHEMTM1 EE_HEMT1 Vto=0.18 Gamma=0.00417 Vgo=0.7 Vdelt=0 Vch=3.93 Gmmax=2.77*(140*exp(3.4139/(52e-6*1e6))/1000) Vdso=2 Vsat=0.6 Kapa=0.013 Peff=3.5*(21.4/(52e-6*1e6)+1.7319*8**(-0.8813)-0.1248) Vtso=-10 Is=2.77*5e-9 N=2.7 Ris=0.9 Rid=0.00036 Tau=3.2e-12 Cdso=2.77*(7.2135*ln(8)+10)*1e-15 Rdb=1e9 Cbs=2.77*1e-15 Vtoac=0.0256 Gammaac=30*0.004217/75 Vdeltac=0 Gmmaxac=2.6*(126.75/(52e-6*1e6)**0.1894-4.5*ln(8)+46)/1000 Kapaac=1200*0.012/75 Peffac=0.5*3.5*(21.4/(52e-6*1e6)+1.7319*8**(-0.8813)-0.1248) Vtsoac=-10.6 Gdbm=2.77*5e-6 Kdb=50/2.77 Vdsm=1 C11o=2.8*(320/8**0.0244-27.252*ln(52e-6*1e6)+226.6)*1e-15 C11th=2.77*(241.79/(52e-6*1e6)**0.2241)*1e-15 Vinfl=0.3295 Deltgs=0.5006 Deltds=0.52 Lambda=0.01 C12sat=2.5*(237.34/(52e-6*1e6)+26.728)*1e-15 Cgdsat=3.7*19.69e-15 Kbk=2.77*5e-6 Vbr=15 Nbr=2 Idsoc=0.393*2.77 Rd=(0.0049*(8*52e-6*1e6)+2.5398)/2.3 Rs=2.226/2.3 Rg=3/5.77 Ugw=52e-6 Ngf=8 Vco=0.58 Vba=4.829 Vbc=0.95 Mu=7.861e-6 Deltgm=0.5824 Deltgmac=1.11 Alpha=1 Tnom=25 Xti=3 
+end SAV541_model_smpl_v3
+V_Source:SRC1  N__8 0 Type="V_DC" Vdc=6 V SaveCurrent=1 
+"BJTM1":BJT1  N__7 N__7 N__3 Mode=1 Noise=yes 
+"BJTM1":BJT2  N__13 N__7 N__10 Mode=1 Noise=yes 
+R:R1  N__7 0 R=4.32 kOhm Noise=yes 
+R:R2  N__13 0 R=4.32 kOhm Noise=yes 
+R:R3  N__10 N__8 R=33.2 Ohm Noise=yes 
+R:R4  N__3 N__8 R=3.57 kOhm Noise=yes 
+SAV541_model_smpl_v3:I__9  N__14 N__9 0 0 
+Short:I_Probe1  N__10 N__4 Mode=0 SaveCurrent=yes 
+model BJTM1 BJT NPN=0 PNP=1 Is=1E-14 A Bf=200 Vaf=100 V Ikf=.4 A Br=4 Rb=20 Ohm Re=.1 Ohm Rc=.1 Ohm Cje=10E-12 F Cjc=4.5E-12 F Xtf=3 Tf=350E-12 sec Vtf=2 V Itf=1 A Tr=250E-9 sec Lateral=0 RbModel=0 Approxqb=1 Xtb=1.5 
+model MSub1 MSUB H=1.52 mm Er=3.38 Mur=1 Cond=5.97E7 Hu=1.0e+036 um T=17.5 um TanD=0 Rough=0 um DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+L:L2  N__13 N__14 L=10000000 nH R=0 Ohm Noise=yes  
+L:L1  N__4 N__9 L=10000000 nH R=0 Ohm Noise=yes  
+Port:Term1  N__15 0 Num=1 Z=50 Ohm Noise=yes 
+C:C3  N__6 N__15 C=0.01 uF 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=.1 GHz Stop=5 GHz Step=.1 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+C:C2  N__9 N__0 C=0.01 uF 
+MLIN2:TL1  N__14 N__6 Subst="MSub1" W=3.49 mm L=5.855 mm Wall1=1.0E+30 um Wall2=1.0E+30 um Mod=1 
+MLOC2:TL2  N__6 Subst="MSub1" W=3.49 mm L=11.5 mm tune{ 10 mm to 16.5 mm by 0.5 mm } Wall1=1.0E+30 um Wall2=1.0E+30 um Mod=1 
+DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
+OutputPlan="DC1_Output" 
+
+OutputPlan:DC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
