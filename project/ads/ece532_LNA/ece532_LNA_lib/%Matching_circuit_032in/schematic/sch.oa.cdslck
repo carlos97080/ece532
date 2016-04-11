@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      Cameron Tribe
+HostName                       DESKTOP-5534DRQ
+ProcessIdentifier              4188
+ProcessCreationTime_UTC        1460352244
+ProcessCreationTime_Readable   04/10/16 22:24:04 Pacific Daylight Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         \\vboxsvr\sp2016\ECE532\project\ads\ece532_LNA\ece532_LNA_lib\%Matching_circuit_032in\schematic\sch.oa.cdslck
+TimeEditLocked                 04/10/16 22:28:17 Pacific Daylight Time

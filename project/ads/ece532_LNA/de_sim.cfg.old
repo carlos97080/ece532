@@ -1,6 +1,10 @@
-DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_SYMBOLS=C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\symbols;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\symbols;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\symbols;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\symbols
 SYSTEM_CUSTOM_CIRCUIT_SYMBOLS={%DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_SYMBOLS};{$HPEESOF_DIR}\custom\{%PROJECT1}\symbols
-DESIGN_KIT_DATA_FILES=C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\data;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\models;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\data;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\models
-DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_DESIGNS=C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\artwork;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\circuit\artwork;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\artwork;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\designs;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\artwork;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\circuit\designs
 SYSTEM_CUSTOM_CIRCUIT_DESIGNS={%DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_DESIGNS};{$HPEESOF_DIR}\custom\{%PROJECT1}\designs
-DESIGN_KIT_VIA_CONFIG_PATH=C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\de\defaults;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit\de\defaults;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\de\defaults;C:\Agilent\ADS2014_01_x86\examples\DesignKit\DemoKit_Non_Linear\DemoKit_Non_Linear_v2.0\de\defaults
+VIA_CONFIG_PATH={%DESIGN_KIT_VIA_CONFIG_PATH};.:{%PROJECT_SEARCH_PATH}:{$HOME}\hpeesof\de\defaults:{$HPEESOF_DIR}\de\defaults:{%DESIGN_KIT_VIA_CONFIG_PATH}:{%USER_VIA_CONFIG_PATH}
+LAST_LIBRARY_SELECTED=ece532_LNA_lib
+SCHEM_FILE_OPEN_HISTORY_1=ece532_LNA_lib:Matching_circuit:schematic
+SCHEM_FILE_OPEN_HISTORY_2=ece532_LNA_lib:test_input_circuit:schematic
+SCHEM_FILE_OPEN_HISTORY_3=ece532_LNA_lib:DC_bias_circuit:schematic
+SCHEM_FILE_OPEN_HISTORY_4=ece532_LNA_lib:2N3906_test_circuit:schematic
+LAYOUT_FILE_OPEN_HISTORY_1=atf54143_010407_lib:SAV541_model_smpl_v3:layout
+SYMBOL_FILE_OPEN_HISTORY_1=atf54143_010407_lib:SAV541_model_smpl_v3:symbol
