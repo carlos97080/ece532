@@ -6711,7 +6711,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="86.36" y="83.82"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="GATE" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
@@ -6731,7 +6731,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="119.38" y="76.2"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="DRAIN" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="Q3" gate="G$1" pin="D"/>

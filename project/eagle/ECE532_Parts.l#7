@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -69,16 +69,6 @@
 <text x="-3.5" y="4.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.4" y="3.2" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="TAPPERED_TL1">
-<polygon width="0.127" layer="1">
-<vertex x="-1.745" y="5"/>
-<vertex x="1.745" y="5"/>
-<vertex x="0.45" y="0"/>
-<vertex x="-0.45" y="0"/>
-</polygon>
-<smd name="G1" x="0" y="0" dx="0.8" dy="0.1" layer="1"/>
-<smd name="G2" x="0" y="4.9" dx="1.27" dy="0.1" layer="1"/>
-</package>
 </packages>
 <symbols>
 <symbol name="MOS">
@@ -98,22 +88,6 @@
 <text x="2.970675" y="-4.951828125" size="0.508" layer="96">S</text>
 <text x="-2.385540625" y="-0.79529375" size="0.508" layer="96">G</text>
 </symbol>
-<symbol name="1X2_CON">
-<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<wire x1="0" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-</symbol>
-<symbol name="TAPPERED_TL1">
-<wire x1="0" y1="2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
-<pin name="GATE_OUT" x="-4.7625" y="-1.5875" length="middle"/>
-<pin name="GATE" x="23.01875" y="-1.5875" length="middle" rot="R180"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SAV-541+" prefix="Q">
@@ -126,22 +100,6 @@
 <connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TAPPERED_TL1">
-<gates>
-<gate name="G$1" symbol="TAPPERED_TL1" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="TAPPERED_TL1">
-<connects>
-<connect gate="G$1" pin="GATE" pad="G1"/>
-<connect gate="G$1" pin="GATE_OUT" pad="G2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6630,7 +6630,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="TP2" gate="G$1" x="86.36" y="86.36"/>
 <instance part="TP3" gate="G$1" x="58.42" y="86.36"/>
 <instance part="TP4" gate="G$1" x="73.66" y="66.04"/>
-<instance part="TP5" gate="G$1" x="109.22" y="58.42"/>
+<instance part="TP5" gate="G$1" x="109.22" y="58.42" smashed="yes">
+<attribute name="NAME" x="107.95" y="52.07" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="110.49" y="57.15" size="1.778" layer="97"/>
+</instance>
 <instance part="TP6" gate="G$1" x="121.92" y="60.96" rot="R270"/>
 </instances>
 <busses>
