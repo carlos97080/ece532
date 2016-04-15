@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -70,14 +70,34 @@
 <text x="-3.4" y="3.2" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="TAPPERED_TL1">
-<polygon width="0.127" layer="1">
+<polygon width="0" layer="1">
 <vertex x="-1.745" y="5"/>
 <vertex x="1.745" y="5"/>
 <vertex x="0.45" y="0"/>
 <vertex x="-0.45" y="0"/>
 </polygon>
-<smd name="G1" x="0" y="0" dx="0.8" dy="0.1" layer="1"/>
-<smd name="G2" x="0" y="4.9" dx="1.27" dy="0.1" layer="1"/>
+<smd name="G1" x="0" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="G2" x="0" y="5" dx="3" dy="0.5" layer="1"/>
+</package>
+<package name="OPEN_STUB1">
+<polygon width="0" layer="1">
+<vertex x="-1.745" y="0"/>
+<vertex x="1.745" y="0"/>
+<vertex x="1.745" y="-2"/>
+<vertex x="-1.745" y="-2"/>
+</polygon>
+<smd name="P$1" x="0" y="0" dx="3" dy="1" layer="1"/>
+</package>
+<package name="TEE_TL1">
+<polygon width="0" layer="1">
+<vertex x="-1.745" y="3.015"/>
+<vertex x="1.745" y="3.015"/>
+<vertex x="1.745" y="-0.475"/>
+<vertex x="-1.745" y="-0.475"/>
+</polygon>
+<smd name="T_B" x="0" y="-0.475" dx="3" dy="0.5" layer="1"/>
+<smd name="T_R" x="1.745" y="1.27" dx="1.27" dy="0.5" layer="1" rot="R90"/>
+<smd name="T_L" x="-1.745" y="1.27" dx="1.27" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -107,12 +127,31 @@
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 <symbol name="TAPPERED_TL1">
-<wire x1="0" y1="2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="17.78" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
-<pin name="GATE_OUT" x="-4.7625" y="-1.5875" length="middle"/>
-<pin name="GATE" x="23.01875" y="-1.5875" length="middle" rot="R180"/>
+<wire x1="0.0635" y1="1.2827" x2="0.0635" y2="-1.2573" width="0.254" layer="94"/>
+<wire x1="0.0635" y1="-1.2573" x2="10.0965" y2="0.0127" width="0.254" layer="94"/>
+<wire x1="10.0965" y1="0.0127" x2="0.0635" y2="1.2827" width="0.254" layer="94"/>
+<pin name="G2" x="-5.08" y="0" length="middle"/>
+<pin name="GATE" x="15.24" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="OPEN_STUB1">
+<wire x1="-2.54" y1="1.27" x2="8.255" y2="1.27" width="0.254" layer="94"/>
+<wire x1="8.255" y1="1.27" x2="8.255" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="8.255" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<pin name="O_STUB" x="-7.62" y="0" length="middle"/>
+</symbol>
+<symbol name="TEE_TL1">
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="4.445" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="4.445" y1="-2.54" x2="4.445" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="4.445" y1="-0.635" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<pin name="T_L" x="-7.62" y="-2.54" length="middle"/>
+<pin name="T_B" x="0" y="-7.62" length="middle" rot="R90"/>
+<pin name="T_R" x="10.16" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -140,8 +179,40 @@
 <devices>
 <device name="" package="TAPPERED_TL1">
 <connects>
+<connect gate="G$1" pin="G2" pad="G2"/>
 <connect gate="G$1" pin="GATE" pad="G1"/>
-<connect gate="G$1" pin="GATE_OUT" pad="G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPEN_STUB1">
+<gates>
+<gate name="G$1" symbol="OPEN_STUB1" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPEN_STUB1">
+<connects>
+<connect gate="G$1" pin="O_STUB" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEE_TL1">
+<gates>
+<gate name="G$1" symbol="TEE_TL1" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEE_TL1">
+<connects>
+<connect gate="G$1" pin="T_B" pad="T_B"/>
+<connect gate="G$1" pin="T_L" pad="T_L"/>
+<connect gate="G$1" pin="T_R" pad="T_R"/>
 </connects>
 <technologies>
 <technology name=""/>
