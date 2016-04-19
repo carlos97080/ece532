@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9546,7 +9546,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <junction x="7.62" y="20.32"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VG" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -9599,7 +9599,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="-15.24" y1="25.4" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="VD" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="E"/>

@@ -2323,13 +2323,13 @@ In this library the device names are the same as the pin names of the symbols, t
 </package>
 <package name="TAPPERED_TL1">
 <polygon width="0" layer="1">
-<vertex x="-1.745" y="5"/>
-<vertex x="1.745" y="5"/>
-<vertex x="0.45" y="0"/>
-<vertex x="-0.45" y="0"/>
+<vertex x="-1.745" y="-0.08"/>
+<vertex x="1.745" y="-0.08"/>
+<vertex x="0.35" y="-5.08"/>
+<vertex x="-0.35" y="-5.08"/>
 </polygon>
-<smd name="G1" x="0" y="0" dx="0.8" dy="0.3" layer="1"/>
-<smd name="G2" x="0" y="5" dx="3" dy="0.5" layer="1"/>
+<smd name="G1" x="0" y="-5.08" dx="0.6" dy="0.3" layer="1"/>
+<smd name="G2" x="0" y="-0.08" dx="3" dy="0.5" layer="1"/>
 </package>
 <package name="TEE_TL1">
 <polygon width="0" layer="1">

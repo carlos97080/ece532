@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2323,13 +2323,13 @@ In this library the device names are the same as the pin names of the symbols, t
 </package>
 <package name="TAPPERED_TL1">
 <polygon width="0" layer="1">
-<vertex x="-1.745" y="-0.08"/>
-<vertex x="1.745" y="-0.08"/>
-<vertex x="0.35" y="-5.08"/>
-<vertex x="-0.35" y="-5.08"/>
+<vertex x="-1.745" y="5"/>
+<vertex x="1.745" y="5"/>
+<vertex x="0.45" y="0"/>
+<vertex x="-0.45" y="0"/>
 </polygon>
-<smd name="G1" x="0" y="-5.08" dx="0.6" dy="0.3" layer="1"/>
-<smd name="G2" x="0" y="-0.08" dx="3" dy="0.5" layer="1"/>
+<smd name="G1" x="0" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="G2" x="0" y="5" dx="3" dy="0.5" layer="1"/>
 </package>
 <package name="TEE_TL1">
 <polygon width="0" layer="1">
@@ -9460,17 +9460,17 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <parts>
 <part name="Q1" library="transistor-pnp" deviceset="MMBT3906*" device="SMD" technology="LT1"/>
 <part name="Q2" library="transistor-pnp" deviceset="MMBT3906*" device="SMD" technology="LT1"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="3k"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="15"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="3570"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="33.2"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="M1206" value="4320"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="M1206" value="4320"/>
-<part name="GND" library="supply2" deviceset="AGND" device="" value="GND"/>
+<part name="SUPPLY1" library="supply2" deviceset="AGND" device=""/>
 <part name="Q3" library="ECE532_Parts" deviceset="SAV-541+" device=""/>
 <part name="L1" library="resistor" deviceset="L-US" device="L3225M" value="820nH"/>
 <part name="L2" library="resistor" deviceset="L-US" device="L3225M" value="820nH"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device="" value="3.3V"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="TP2" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP4" library="testpad" deviceset="TP" device="B1,27"/>
@@ -9482,8 +9482,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="X1" library="con-coax" deviceset="SMA-" device="142-0701-871/876"/>
 <part name="X2" library="con-coax" deviceset="SMA-" device="142-0701-871/876"/>
-<part name="U$4" library="ECE532_Parts" deviceset="TAPPERED_TL1" device=""/>
-<part name="GND1" library="supply2" deviceset="AGND" device="" value="GND"/>
+<part name="SUPPLY3" library="supply2" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9496,7 +9495,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="R2" gate="G$1" x="2.54" y="40.64" rot="R180"/>
 <instance part="R3" gate="G$1" x="-15.24" y="5.08" rot="R270"/>
 <instance part="R4" gate="G$1" x="20.32" y="5.08" rot="R270"/>
-<instance part="GND" gate="G$1" x="2.54" y="-12.7"/>
+<instance part="SUPPLY1" gate="G$1" x="2.54" y="-12.7"/>
 <instance part="Q3" gate="G$1" x="91.44" y="12.7"/>
 <instance part="L1" gate="G$1" x="33.02" y="12.7" rot="R90"/>
 <instance part="L2" gate="G$1" x="30.48" y="33.02" rot="R90"/>
@@ -9521,8 +9520,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="X2" gate="G1" x="58.42" y="45.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.722" y="48.26" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="U$4" gate="G$1" x="78.74" y="33.02"/>
-<instance part="GND1" gate="G$1" x="45.72" y="38.1"/>
+<instance part="SUPPLY3" gate="G$1" x="45.72" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -9546,7 +9544,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <junction x="7.62" y="20.32"/>
 </segment>
 </net>
-<net name="VG" class="0">
+<net name="N$2" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -9569,7 +9567,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="2.54" y1="-5.08" x2="20.32" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-5.08" x2="20.32" y2="0" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="GND" gate="G$1" pin="AGND"/>
+<pinref part="SUPPLY1" gate="G$1" pin="AGND"/>
 <wire x1="20.32" y1="-5.08" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="20.32" y1="-17.78" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
@@ -9585,12 +9583,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="-22.86" y1="50.8" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="AGND"/>
 </segment>
-<segment>
-<pinref part="X2" gate="G1" pin="2"/>
-<wire x1="55.88" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="43.18" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="GND1" gate="G$1" pin="AGND"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -9599,7 +9591,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="-15.24" y1="25.4" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VD" class="0">
+<net name="N$6" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
@@ -9613,7 +9605,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <junction x="20.32" y="40.64"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+5V" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-30.48" y1="53.34" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
@@ -9672,8 +9664,9 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="G2"/>
-<wire x1="58.42" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="58.42" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="33.02" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -9683,11 +9676,12 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="58.42" y1="40.64" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="AGND" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="93.98" y1="33.02" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GATE"/>
+<pinref part="X2" gate="G1" pin="2"/>
+<wire x1="55.88" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="43.18" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
 </segment>
 </net>
 </nets>
