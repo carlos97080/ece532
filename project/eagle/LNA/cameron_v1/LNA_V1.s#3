@@ -8683,10 +8683,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="GND2" library="supply2" deviceset="AGND" device="" value="GND"/>
 <part name="GND3" library="supply2" deviceset="AGND" device="" value="GND"/>
 <part name="GND4" library="supply2" deviceset="AGND" device="" value="GND"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="M1206" value="50"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="100"/>
-<part name="GND5" library="supply2" deviceset="AGND" device="" value="GND"/>
-<part name="GND6" library="supply2" deviceset="AGND" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -8719,10 +8715,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="GND2" gate="G$1" x="20.32" y="-10.16"/>
 <instance part="GND3" gate="G$1" x="48.26" y="-7.62"/>
 <instance part="GND4" gate="G$1" x="93.98" y="-7.62"/>
-<instance part="R5" gate="G$1" x="81.28" y="7.62" rot="R270"/>
-<instance part="R6" gate="G$1" x="104.14" y="22.86" rot="R270"/>
-<instance part="GND5" gate="G$1" x="81.28" y="0"/>
-<instance part="GND6" gate="G$1" x="104.14" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -8787,15 +8779,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="GND4" gate="G$1" pin="AGND"/>
 <wire x1="93.98" y1="7.62" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="GND5" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="GND6" gate="G$1" pin="AGND"/>
-<wire x1="104.14" y1="12.7" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -8839,10 +8822,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="10.16" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="40.64" y1="12.7" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
-<junction x="81.28" y="12.7"/>
+<wire x1="40.64" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ISO_INPUT" class="0">
@@ -8858,12 +8838,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="93.98" y1="33.02" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="27.94" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="33.02" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
-<junction x="93.98" y="27.94"/>
 </segment>
 </net>
 <net name="ISO_OUTPUT" class="0">
