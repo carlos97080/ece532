@@ -1,0 +1,11 @@
+SYSTEM_CUSTOM_CIRCUIT_SYMBOLS={%DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_SYMBOLS};{$HPEESOF_DIR}\custom\{%PROJECT1}\symbols
+SYSTEM_CUSTOM_CIRCUIT_DESIGNS={%DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_DESIGNS};{$HPEESOF_DIR}\custom\{%PROJECT1}\designs
+VIA_CONFIG_PATH={%DESIGN_KIT_VIA_CONFIG_PATH};.:{%PROJECT_SEARCH_PATH}:{$HOME}\hpeesof\de\defaults:{$HPEESOF_DIR}\de\defaults:{%DESIGN_KIT_VIA_CONFIG_PATH}:{%USER_VIA_CONFIG_PATH}
+LAST_LIBRARY_SELECTED=SAV-541+
+SCHEM_FILE_OPEN_HISTORY_1=SAV-541+:LNA:schematic
+DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_SYMBOLS=C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\symbols;C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\symbols
+
+DESIGN_KIT_DATA_FILES=C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\data;C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\models
+
+DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_DESIGNS=C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\artwork;C:\Users\Cameron\Desktop\ece532_LNA_cameron\murata_lib_ads2011later_54et\circuit\artwork
+
