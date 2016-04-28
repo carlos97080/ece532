@@ -3,4 +3,4 @@ DEFINE ece532_LNA_cameron_lib ece532_LNA_cameron_lib
 ASSIGN ece532_LNA_cameron_lib libMode shared
 DEFINE SAV#2d541#2b SAV-541+_model_v4_wrk/atf54143_010407_lib
 ASSIGN SAV#2d541#2b libMode shared
-INCLUDE $HOME/Desktop/ece532_LNA_cameron/murata_lib_ads2011later_54et/lib.defs
+INCLUDE $HPEESOF_DIR/murata_lib_ads2011later_54et/lib.defs
