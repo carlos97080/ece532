@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.003125" unitdist="mic" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -62,9 +62,10 @@
 <wire x1="49.9692" y1="0" x2="49.9692" y2="27.288" width="0" layer="20"/>
 <wire x1="49.9692" y1="27.288" x2="0" y2="27.288" width="0" layer="20"/>
 <wire x1="0" y1="27.288" x2="0" y2="0" width="0" layer="20"/>
-<text x="4.859028125" y="0.622203125" size="1.016" layer="1" font="vector" ratio="15" rot="R90">Cameron T.
+<text x="1.432028125" y="1.014125" size="0.762" layer="1" font="vector" ratio="15">Cameron T.
 Carlos M.
-Raymond S.</text>
+Raymond S.
+ECE 532 Apr, 2016</text>
 </plain>
 <libraries>
 <library name="transistor-pnp">
@@ -2541,43 +2542,43 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="Q1" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="27.286615625" y="10.257621875" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.651615625" y="8.352621875" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="28.93429375" y="10.978225" size="0.762" layer="25"/>
 </element>
 <element name="Q2" library="transistor-pnp" package="SOT23-BEC" value="MMBT3906LT1SMD" x="22.733834375" y="10.2465875" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.368834375" y="5.8015875" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="19.6312375" y="10.8267875" size="0.762" layer="25"/>
 </element>
 <element name="R1" library="rcl" package="M0805" value="3k" x="26.203328125" y="6.42108125" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.081225" y="10.180878125" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="27.271046875" y="4.757134375" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="R2" library="rcl" package="M0805" value="15" x="23.84818125" y="6.460140625" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.047875" y="10.358040625" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="24.61399375" y="4.771584375" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="R3" library="rcl" package="M0805" value="4320" x="28.389984375" y="6.428009375" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.5241875" y="10.1901125" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="29.28013125" y="3.762978125" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="R4" library="rcl" package="M0805" value="4320" x="21.698859375" y="6.460140625" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.50875625" y="10.4059375" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="21.15038125" y="3.289025" size="0.762" layer="25"/>
 </element>
 <element name="Q3" library="ECE532_Parts" package="SOT-343" value="SAV-541+" x="19.134834375" y="19.241434375" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.394834375" y="20.201434375" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="18.116478125" y="20.067003125" size="0.762" layer="25"/>
 </element>
 <element name="L1" library="resistor" package="L3225M" value="820nH" x="15.29945" y="16.15039375" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.055209375" y="15.343721875" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="14.2554125" y="18.00135625" size="0.762" layer="25" rot="R180"/>
 </element>
 <element name="L2" library="resistor" package="L3225M" value="820nH" x="24.77983125" y="14.8434" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.671221875" y="13.785790625" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="23.21356875" y="16.63325625" size="0.762" layer="25" rot="R180"/>
 <attribute name="VALUE" x="27.57383125" y="13.4464" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="JP1" library="pinhead" package="1X02" value="" x="25.225521875" y="2.334146875" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.841721875" y="0.505346875" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="30.011121875" y="1.6172125" size="0.762" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="27.765521875" y="5.509146875" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C1" library="rcl" package="C0603" value="" x="9.222675" y="19.236" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.270175" y="18.601" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="8.270175" y="18.601" size="0.762" layer="25" rot="R180"/>
 <attribute name="VALUE" x="9.857675" y="21.141" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="rcl" package="C0603" value="" x="41.1699" y="17.939490625" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.4489375" y="21.578925" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="43.4489375" y="21.578925" size="0.762" layer="25" rot="R180"/>
 <attribute name="VALUE" x="41.8049" y="19.844490625" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="X1" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="-0.0077125" y="19.24040625" smashed="yes">
@@ -2585,17 +2586,23 @@ design rules under a new name.</description>
 <attribute name="MPN" value="142-0711-821" x="41.9022875" y="9.08040625" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="41.9022875" y="9.08040625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1019328" x="41.9022875" y="9.08040625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="0.6272875" y="25.59040625" size="1.778" layer="25"/>
+<attribute name="NAME" x="0.6272875" y="25.59040625" size="0.762" layer="25"/>
 </element>
 <element name="X2" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="49.964815625" y="17.93748125" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="16F3627" x="8.054815625" y="47.14748125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="142-0711-821" x="8.054815625" y="47.14748125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="8.054815625" y="47.14748125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1019328" x="8.054815625" y="47.14748125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="49.329815625" y="11.58748125" size="1.778" layer="25" rot="R180"/>
+<attribute name="NAME" x="49.329815625" y="11.58748125" size="0.762" layer="25" rot="R180"/>
 </element>
-<element name="R5" library="rcl" package="M0805" value="50" x="15.599703125" y="21.75905625" rot="R90"/>
-<element name="R6" library="rcl" package="M0805" value="100" x="24.4741625" y="20.4567125" rot="R90"/>
+<element name="R5" library="rcl" package="M0805" value="50" x="15.599703125" y="21.75905625" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.600878125" y="21.19414375" size="0.762" layer="25" rot="R90"/>
+<attribute name="VALUE" x="18.139703125" y="20.48905625" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R6" library="rcl" package="M0805" value="100" x="24.4741625" y="20.4567125" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.4988375" y="21.626953125" size="0.762" layer="25" rot="R270"/>
+<attribute name="VALUE" x="27.0141625" y="19.1867125" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
