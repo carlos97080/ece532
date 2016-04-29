@@ -59,9 +59,9 @@
 <board>
 <plain>
 <wire x1="42.75" y1="5.25" x2="71.9" y2="5.25" width="0" layer="20"/>
-<wire x1="71.9" y1="5.25" x2="71.9" y2="90.6" width="0" layer="20"/>
-<wire x1="71.9" y1="90.6" x2="17.25" y2="90.6" width="0" layer="20"/>
-<wire x1="17.25" y1="90.6" x2="17.25" y2="23.9" width="0" layer="20"/>
+<wire x1="71.9" y1="5.25" x2="72.1" y2="50.4" width="0" layer="20"/>
+<wire x1="72.1" y1="50.4" x2="17.45" y2="50.4" width="0" layer="20"/>
+<wire x1="17.45" y1="50.4" x2="17.25" y2="23.9" width="0" layer="20"/>
 <text x="48.082028125" y="26.814125" size="1.016" layer="1" font="vector" ratio="15">Cameron T.
 Carlos M.
 Raymond S.
@@ -2588,30 +2588,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="43.9141625" y="42.5867125" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U$1" library="ece510_library" package="BAT_HOLDER" value="BAT_HOLDER" x="57.25" y="15.75"/>
-<element name="X3" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="17" y="77">
-<attribute name="MPN" value="142-0711-821" x="17" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="16F3627" x="17" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="17" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1019328" x="17" y="77" size="1.778" layer="27" display="off"/>
-</element>
-<element name="X4" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="72" y="77" rot="R180">
-<attribute name="MPN" value="142-0711-821" x="72" y="77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="16F3627" x="72" y="77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="72" y="77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1019328" x="72" y="77" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="X5" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="16" y="61">
-<attribute name="MPN" value="142-0711-821" x="16" y="61" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="16F3627" x="16" y="61" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="16" y="61" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1019328" x="16" y="61" size="1.778" layer="27" display="off"/>
-</element>
-<element name="X6" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="72" y="62" rot="R180">
-<attribute name="MPN" value="142-0711-821" x="72" y="62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="16F3627" x="72" y="62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="72" y="62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1019328" x="72" y="62" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2701,36 +2677,10 @@ design rules under a new name.</description>
 <wire x1="51.25" y1="20.5" x2="50.92" y2="20.83" width="0.2032" layer="1"/>
 <wire x1="63.62" y1="20.83" x2="63.62" y2="20.940134375" width="0.2032" layer="1"/>
 <wire x1="63.62" y1="20.940134375" x2="64.347228125" y2="21.6673625" width="0.2032" layer="1"/>
-<contactref element="X3" pad="G@3"/>
-<contactref element="X3" pad="G@1"/>
-<contactref element="X3" pad="G@2"/>
-<contactref element="X3" pad="G@4"/>
-<contactref element="X4" pad="G@3"/>
-<contactref element="X4" pad="G@1"/>
-<contactref element="X4" pad="G@2"/>
-<contactref element="X4" pad="G@4"/>
-<contactref element="X5" pad="G@3"/>
-<contactref element="X5" pad="G@1"/>
-<contactref element="X5" pad="G@2"/>
-<contactref element="X5" pad="G@4"/>
-<contactref element="X6" pad="G@3"/>
-<contactref element="X6" pad="G@1"/>
-<contactref element="X6" pad="G@2"/>
-<contactref element="X6" pad="G@4"/>
-<contactref element="X6" pad="1"/>
-<wire x1="69.8846" y1="80.4946" x2="69.8846" y2="80.4946" width="0" layer="19" extent="1-16"/>
-<wire x1="69.8846" y1="73.5054" x2="69.8846" y2="73.5054" width="0" layer="19" extent="1-16"/>
-<wire x1="69.8846" y1="65.4946" x2="69.8846" y2="65.4946" width="0" layer="19" extent="1-16"/>
-<wire x1="69.8846" y1="58.5054" x2="69.8846" y2="58.5054" width="0" layer="19" extent="1-16"/>
 <wire x1="69.799415625" y1="44.83208125" x2="69.799415625" y2="44.83208125" width="0" layer="19" extent="1-16"/>
 <wire x1="69.799415625" y1="37.84288125" x2="69.799415625" y2="37.84288125" width="0" layer="19" extent="1-16"/>
-<wire x1="19.1154" y1="80.4946" x2="19.1154" y2="80.4946" width="0" layer="19" extent="1-16"/>
-<wire x1="19.1154" y1="73.5054" x2="19.1154" y2="73.5054" width="0" layer="19" extent="1-16"/>
-<wire x1="18.1154" y1="64.4946" x2="18.1154" y2="64.4946" width="0" layer="19" extent="1-16"/>
-<wire x1="18.1154" y1="57.5054" x2="18.1154" y2="57.5054" width="0" layer="19" extent="1-16"/>
 <wire x1="19.2576875" y1="46.13500625" x2="19.2576875" y2="46.13500625" width="0" layer="19" extent="1-16"/>
 <wire x1="19.2576875" y1="39.14580625" x2="19.2576875" y2="39.14580625" width="0" layer="19" extent="1-16"/>
-<wire x1="69.8846" y1="62" x2="69.8846" y2="58.5054" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="Q1" pad="E"/>
@@ -2840,38 +2790,6 @@ design rules under a new name.</description>
 <vertex x="59.99151875" y="40.41565625"/>
 <vertex x="59.99151875" y="31.256"/>
 </polygon>
-</signal>
-<signal name="THRU">
-<contactref element="X3" pad="1"/>
-<contactref element="X4" pad="1"/>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="24.108384375" y="60.077040625"/>
-<vertex x="20.193990625" y="60.077040625"/>
-<vertex x="20.193990625" y="61.9261625"/>
-<vertex x="24.108384375" y="61.9261625"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="67.797371875" y="61.06966875"/>
-<vertex x="63.882978125" y="61.06966875"/>
-<vertex x="63.882978125" y="62.918790625"/>
-<vertex x="67.797371875" y="62.918790625"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="25.12075625" y="76.076834375"/>
-<vertex x="21.2063625" y="76.076834375"/>
-<vertex x="21.2063625" y="77.92595625"/>
-<vertex x="25.12075625" y="77.92595625"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="29.035203125" y="76.077203125"/>
-<vertex x="25.120809375" y="76.077203125"/>
-<vertex x="25.120809375" y="77.926325"/>
-<vertex x="29.035203125" y="77.926325"/>
-</polygon>
-<wire x1="19.1154" y1="77" x2="69.8846" y2="77" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="OPEN">
-<contactref element="X5" pad="1"/>
 </signal>
 </signals>
 </board>
