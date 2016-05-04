@@ -113,15 +113,15 @@
 <package name="RADIAL_STUB">
 <smd name="P$1" x="0" y="0" dx="0.09" dy="0.09" layer="1"/>
 <polygon width="0" layer="1">
-<vertex x="-1.4" y="4"/>
-<vertex x="1.4" y="4"/>
+<vertex x="-5.5" y="4"/>
+<vertex x="5.5" y="4"/>
 <vertex x="0.1016" y="0"/>
 <vertex x="-0.1016" y="0"/>
 </polygon>
-<polygon width="0.001" layer="1">
-<vertex x="-1.4" y="4"/>
-<vertex x="-1.4" y="4.1" curve="-184.090813"/>
-<vertex x="1.4" y="4"/>
+<polygon width="0" layer="1">
+<vertex x="-5.5" y="4"/>
+<vertex x="-5.5" y="4.1" curve="-181.041712"/>
+<vertex x="5.5" y="4"/>
 </polygon>
 </package>
 </packages>
@@ -190,6 +190,14 @@
 <pin name="T_L" x="-7.62" y="0" length="middle"/>
 <pin name="T_B" x="0" y="-7.62" length="middle" rot="R90"/>
 <pin name="T_R" x="7.62" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RADIAL_STUB">
+<wire x1="5.08" y1="1.27" x2="8.255" y2="3.81" width="0.254" layer="94"/>
+<wire x1="8.255" y1="-3.81" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<pin name="O_STUB" x="0" y="0" length="middle"/>
+<wire x1="8.290559375" y1="3.825240625" x2="8.47851875" y2="3.825240625" width="0.254" layer="94"/>
+<wire x1="8.47851875" y1="3.825240625" x2="8.257540625" y2="-3.79221875" width="0.254" layer="94" curve="-183.323306"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -268,6 +276,21 @@
 <connect gate="G$1" pin="T_B" pad="T_B"/>
 <connect gate="G$1" pin="T_L" pad="T_L"/>
 <connect gate="G$1" pin="T_R" pad="T_R"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADIAL_STUB">
+<gates>
+<gate name="G$1" symbol="RADIAL_STUB" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADIAL_STUB">
+<connects>
+<connect gate="G$1" pin="O_STUB" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
