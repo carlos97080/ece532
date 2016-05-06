@@ -9,3 +9,4 @@ SCHEM_FILE_OPEN_HISTORY_1=SAV-541+:LNA:schematic
 DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_SYMBOLS=C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\symbols;C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\symbols
 DESIGN_KIT_DATA_FILES=C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\data;C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\models
 DESIGN_KIT_SYSTEM_CUSTOM_CIRCUIT_DESIGNS=C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\artwork;C:\Agilent\ADS2014_01_x86\murata_lib_ads2011later_54et\circuit\artwork
+SCHEM_FILE_OPEN_HISTORY_2=SAV-541+:simplified:schematic
