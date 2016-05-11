@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -235,6 +235,15 @@
 <text x="-3.5" y="3.53" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.4" y="1.93" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="1IN_PIPE_CAP">
+<circle x="0" y="0" radius="15.875" width="0" layer="1"/>
+<circle x="6.35" y="0" radius="1.905" width="0.127" layer="45"/>
+<circle x="-6.35" y="0" radius="1.905" width="0.127" layer="45"/>
+<circle x="22.225" y="0" radius="1.905" width="0.127" layer="45"/>
+<circle x="-22.225" y="0" radius="1.905" width="0.127" layer="45"/>
+<smd name="IN" x="-26" y="0" dx="3.49" dy="0.8" layer="1" rot="R90"/>
+<smd name="OUT" x="26" y="0" dx="3.49" dy="0.8" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOS">
@@ -372,6 +381,21 @@
 <pin name="G1" x="7.62" y="-12.7" length="middle" rot="R90"/>
 <wire x1="7.623859375" y1="-7.59634375" x2="7.623859375" y2="-5.799975" width="0.1778" layer="94"/>
 <wire x1="7.62893125" y1="7.622934375" x2="7.62893125" y2="5.838278125" width="0.1778" layer="94"/>
+</symbol>
+<symbol name="BP_FILTER">
+<wire x1="-20.32" y1="-5.08" x2="20.32" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-5.08" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="-20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="5.08" x2="-20.32" y2="-5.08" width="0.254" layer="94"/>
+<pin name="IN" x="-25.4" y="0" visible="pin" length="middle" direction="pas"/>
+<pin name="OUT" x="25.4" y="0" visible="pin" length="middle" direction="pas" rot="R180"/>
+<wire x1="-10.16" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<text x="-20.32" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="7.62" size="1.778" layer="97">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -517,6 +541,22 @@
 <connect gate="G$1" pin="G2" pad="G2"/>
 <connect gate="G$1" pin="RFIN" pad="RFIN"/>
 <connect gate="G$1" pin="RFO" pad="RFO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1IN_PIPE_CAP" prefix="FILTER" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BP_FILTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1IN_PIPE_CAP">
+<connects>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>

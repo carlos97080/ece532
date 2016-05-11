@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -215,9 +215,9 @@
 <vertex x="3.770590625" y="1.288371875"/>
 </polygon>
 <wire x1="4.719840625" y1="-3.31136875" x2="-4.859659375" y2="-3.31136875" width="1.9" layer="1" curve="-180" cap="flat"/>
-<smd name="P$1" x="-9.350159375" y="-0.433759375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="8.649840625" y="2.566240625" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$3" x="8.649840625" y="-3.433759375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$1" x="-9.743490625" y="-0.194203125" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$2" x="16.528284375" y="9.478909375" dx="1.27" dy="0.635" layer="1" rot="R90" thermals="no"/>
+<smd name="P$3" x="16.499346875" y="-10.0921" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <wire x1="13.165421875" y1="-6.60205" x2="16.655421875" y2="-10.09205" width="3.49" layer="1" curve="90" cap="flat"/>
 <wire x1="13.165421875" y1="-6.60205" x2="9.675421875" y2="-3.11205" width="3.49" layer="1" curve="90" cap="flat"/>
 <wire x1="13.165890625" y1="5.9785625" x2="9.675890625" y2="2.4885625" width="3.49" layer="1" curve="-90" cap="flat"/>
