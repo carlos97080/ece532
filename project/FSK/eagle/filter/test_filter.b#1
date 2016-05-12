@@ -110,10 +110,10 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <packages>
 <package name="1IN_PIPE_CAP">
 <circle x="0" y="0" radius="15.875" width="0" layer="1"/>
-<circle x="6.35" y="0" radius="1.905" width="0.0254" layer="20"/>
-<circle x="-6.35" y="0" radius="1.905" width="0.0254" layer="20"/>
-<circle x="22.225" y="0" radius="1.905" width="0.0254" layer="20"/>
-<circle x="-22.225" y="0" radius="1.905" width="0.0254" layer="20"/>
+<circle x="6.35" y="0" radius="1.905" width="0.0254" layer="44"/>
+<circle x="-6.35" y="0" radius="1.905" width="0.0254" layer="44"/>
+<circle x="22.225" y="0" radius="1.905" width="0.0254" layer="44"/>
+<circle x="-22.225" y="0" radius="1.905" width="0.0254" layer="44"/>
 <smd name="IN" x="-26" y="0" dx="3.49" dy="0.8" layer="1" rot="R90"/>
 <smd name="OUT" x="26" y="0" dx="3.49" dy="0.8" layer="1" rot="R90"/>
 </package>
