@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.002" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -146,9 +146,9 @@
 <vertex x="3.770590625" y="1.288371875"/>
 </polygon>
 <wire x1="4.719840625" y1="-3.31136875" x2="-4.859659375" y2="-3.31136875" width="1.9" layer="1" curve="-180" cap="flat"/>
-<smd name="P$1" x="-9.743490625" y="-0.194203125" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="16.528284375" y="9.478909375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$3" x="16.499346875" y="-10.0921" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$1" x="-9.350159375" y="-0.433759375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$2" x="8.649840625" y="2.566240625" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$3" x="8.649840625" y="-3.433759375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <wire x1="13.165421875" y1="-6.60205" x2="16.655421875" y2="-10.09205" width="3.49" layer="1" curve="90" cap="flat"/>
 <wire x1="13.165421875" y1="-6.60205" x2="9.675421875" y2="-3.11205" width="3.49" layer="1" curve="90" cap="flat"/>
 <wire x1="13.165890625" y1="5.9785625" x2="9.675890625" y2="2.4885625" width="3.49" layer="1" curve="-90" cap="flat"/>
@@ -409,40 +409,22 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
+<signal name="OUT2">
+<contactref element="X2" pad="1"/>
+<contactref element="U$1" pad="P$2"/>
+<wire x1="42.1386" y1="37.846" x2="30.620840625" y2="30.887240625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OUT3">
+<contactref element="U$1" pad="P$3"/>
+<contactref element="X3" pad="1"/>
+<wire x1="30.620840625" y1="24.887240625" x2="42.2656" y2="18.288" width="0" layer="19" extent="1-1"/>
+</signal>
 <signal name="IN">
 <contactref element="U$1" pad="P$1"/>
 <contactref element="X1" pad="1"/>
-<polygon width="0.05" layer="1" thermals="no">
-<vertex x="13.38" y="29.656"/>
-<vertex x="8.092" y="29.656"/>
-<vertex x="8.092" y="26.342"/>
-<vertex x="13.394" y="26.342"/>
-<vertex x="13.394" y="29.64"/>
-</polygon>
+<wire x1="8.6614" y1="27.94" x2="12.620840625" y2="27.887240625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
-</signal>
-<signal name="O2">
-<contactref element="U$1" pad="P$2"/>
-<contactref element="X2" pad="1"/>
-<polygon width="0.05" layer="1" thermals="no">
-<vertex x="37.452" y="37.82"/>
-<vertex x="37.45" y="37.814"/>
-<vertex x="37.452" y="37.816"/>
-</polygon>
-<wire x1="42.1386" y1="37.799909375" x2="38.499284375" y2="37.799909375" width="3.3" layer="1"/>
-<wire x1="42.1386" y1="37.799909375" x2="42.1386" y2="37.846" width="0.05" layer="1"/>
-<polygon width="0.05" layer="1">
-<vertex x="35.08" y="34.874"/>
-<vertex x="35.08" y="34.854"/>
-<vertex x="34.7" y="34.854"/>
-</polygon>
-</signal>
-<signal name="O3">
-<contactref element="U$1" pad="P$3"/>
-<contactref element="X3" pad="1"/>
-<wire x1="38.470346875" y1="18.2289" x2="42.2656" y2="18.2289" width="3.3" layer="1"/>
-<wire x1="42.2656" y1="18.2289" x2="42.2656" y2="18.288" width="3.3" layer="1"/>
 </signal>
 </signals>
 </board>

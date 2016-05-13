@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.002" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -66,89 +66,93 @@
 <library name="ECE532_Parts">
 <packages>
 <package name="WSPLITTER_2.5GHZ">
-<wire x1="4.4905" y1="14.12205" x2="14.07" y2="14.12205" width="1.9" layer="1" curve="-180" cap="flat"/>
+<wire x1="-4.859659375" y1="2.688290625" x2="4.719840625" y2="2.688290625" width="1.9" layer="1" curve="-180" cap="flat"/>
 <polygon width="0" layer="1">
-<vertex x="5.441190625" y="14.12205"/>
-<vertex x="3.5413" y="14.12205"/>
-<vertex x="3.5413" y="8.122390625"/>
-<vertex x="5.441190625" y="8.122390625"/>
+<vertex x="-3.90896875" y="2.688290625"/>
+<vertex x="-5.808859375" y="2.688290625"/>
+<vertex x="-5.808859375" y="-3.31136875"/>
+<vertex x="-3.90896875" y="-3.31136875"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="1.541409375" y="12.86711875"/>
-<vertex x="1.541409375" y="9.37731875"/>
-<vertex x="3.5413" y="8.1224"/>
-<vertex x="3.5413" y="14.12205"/>
+<vertex x="-7.80875" y="1.433359375"/>
+<vertex x="-7.80875" y="-2.056440625"/>
+<vertex x="-5.808859375" y="-3.311359375"/>
+<vertex x="-5.808859375" y="2.688290625"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="-0.45846875" y="9.37731875"/>
-<vertex x="-0.45846875" y="12.86711875"/>
-<vertex x="1.541409375" y="12.86711875"/>
-<vertex x="1.541409375" y="9.37731875"/>
+<vertex x="-9.808628125" y="-2.056440625"/>
+<vertex x="-9.808628125" y="1.433359375"/>
+<vertex x="-7.80875" y="1.433359375"/>
+<vertex x="-7.80875" y="-2.056440625"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.12075" y="8.122390625"/>
-<vertex x="15.020640625" y="8.122390625"/>
-<vertex x="15.020640625" y="8.52236875"/>
-<vertex x="13.12075" y="8.52236875"/>
+<vertex x="3.770590625" y="-3.31136875"/>
+<vertex x="5.67048125" y="-3.31136875"/>
+<vertex x="5.67048125" y="-2.911390625"/>
+<vertex x="3.770590625" y="-2.911390625"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="17.02053125" y="6.57748125"/>
-<vertex x="17.02053125" y="10.06728125"/>
-<vertex x="15.020640625" y="8.52236875"/>
-<vertex x="15.020640625" y="8.122390625"/>
+<vertex x="7.670371875" y="-4.856278125"/>
+<vertex x="7.670371875" y="-1.366478125"/>
+<vertex x="5.67048125" y="-2.911390625"/>
+<vertex x="5.67048125" y="-3.31136875"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="17.02053125" y="6.57748125"/>
-<vertex x="17.02053125" y="10.06728125"/>
-<vertex x="19.02041875" y="10.06728125"/>
-<vertex x="19.02041875" y="6.57748125"/>
+<vertex x="7.670371875" y="-4.856278125"/>
+<vertex x="7.670371875" y="-1.366478125"/>
+<vertex x="9.670259375" y="-1.366478125"/>
+<vertex x="9.670259375" y="-4.856278125"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.270740625" y="10.522259375"/>
-<vertex x="14.87065" y="10.522259375"/>
-<vertex x="14.87065" y="9.522309375"/>
-<vertex x="13.270740625" y="9.522309375"/>
+<vertex x="3.92058125" y="-0.9115"/>
+<vertex x="5.520490625" y="-0.9115"/>
+<vertex x="5.520490625" y="-1.91145"/>
+<vertex x="3.92058125" y="-1.91145"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.270740625" y="12.72213125"/>
-<vertex x="14.87065" y="12.72213125"/>
-<vertex x="14.87065" y="11.722190625"/>
-<vertex x="13.270740625" y="11.722190625"/>
+<vertex x="3.92058125" y="1.288371875"/>
+<vertex x="5.520490625" y="1.288371875"/>
+<vertex x="5.520490625" y="0.28843125"/>
+<vertex x="3.92058125" y="0.28843125"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.12075" y="13.72206875"/>
-<vertex x="15.020640625" y="13.72206875"/>
-<vertex x="15.020640625" y="14.12205"/>
-<vertex x="13.12075" y="14.12205"/>
+<vertex x="3.770590625" y="2.288309375"/>
+<vertex x="5.67048125" y="2.288309375"/>
+<vertex x="5.67048125" y="2.688290625"/>
+<vertex x="3.770590625" y="2.688290625"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="17.02053125" y="12.177159375"/>
-<vertex x="17.02053125" y="15.666959375"/>
-<vertex x="15.020640625" y="14.12205"/>
-<vertex x="15.020640625" y="13.72206875"/>
+<vertex x="7.670371875" y="0.7434"/>
+<vertex x="7.670371875" y="4.2332"/>
+<vertex x="5.67048125" y="2.688290625"/>
+<vertex x="5.67048125" y="2.288309375"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="17.02053125" y="12.177159375"/>
-<vertex x="17.02053125" y="15.666959375"/>
-<vertex x="19.02041875" y="15.666959375"/>
-<vertex x="19.02041875" y="12.177159375"/>
+<vertex x="7.670371875" y="0.7434"/>
+<vertex x="7.670371875" y="4.2332"/>
+<vertex x="9.670259375" y="4.2332"/>
+<vertex x="9.670259375" y="0.7434"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.12075" y="9.522309375"/>
-<vertex x="15.020640625" y="9.522309375"/>
-<vertex x="15.020640625" y="8.52236875"/>
-<vertex x="13.12075" y="8.52236875"/>
+<vertex x="3.770590625" y="-1.91145"/>
+<vertex x="5.67048125" y="-1.91145"/>
+<vertex x="5.67048125" y="-2.911390625"/>
+<vertex x="3.770590625" y="-2.911390625"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="13.12075" y="13.72206875"/>
-<vertex x="15.020640625" y="13.72206875"/>
-<vertex x="15.020640625" y="12.72213125"/>
-<vertex x="13.12075" y="12.72213125"/>
+<vertex x="3.770590625" y="2.288309375"/>
+<vertex x="5.67048125" y="2.288309375"/>
+<vertex x="5.67048125" y="1.288371875"/>
+<vertex x="3.770590625" y="1.288371875"/>
 </polygon>
-<wire x1="14.07" y1="8.122390625" x2="4.4905" y2="8.122390625" width="1.9" layer="1" curve="-180" cap="flat"/>
-<smd name="P$1" x="0" y="11" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="18" y="14" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$3" x="18" y="8" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<wire x1="4.719840625" y1="-3.31136875" x2="-4.859659375" y2="-3.31136875" width="1.9" layer="1" curve="-180" cap="flat"/>
+<smd name="P$1" x="-9.743490625" y="-0.194203125" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$2" x="16.528284375" y="9.478909375" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$3" x="16.499346875" y="-10.0921" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<wire x1="13.165421875" y1="-6.60205" x2="16.655421875" y2="-10.09205" width="3.49" layer="1" curve="90" cap="flat"/>
+<wire x1="13.165421875" y1="-6.60205" x2="9.675421875" y2="-3.11205" width="3.49" layer="1" curve="90" cap="flat"/>
+<wire x1="13.165890625" y1="5.9785625" x2="9.675890625" y2="2.4885625" width="3.49" layer="1" curve="-90" cap="flat"/>
+<wire x1="13.165890625" y1="5.9785625" x2="16.655890625" y2="9.4685625" width="3.49" layer="1" curve="-90" cap="flat"/>
 </package>
 </packages>
 </library>
@@ -381,39 +385,75 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="ECE532_Parts" package="WSPLITTER_2.5GHZ" value="WSPLITTER_2.5GHZ" x="-31.75" y="1.27"/>
-<element name="X1" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="-41.91" y="31.75">
-<attribute name="OC_NEWARK" value="90F2624" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0701-801" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1608592" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="U$1" library="ECE532_Parts" package="WSPLITTER_2.5GHZ" value="WSPLITTER_2.5GHZ" x="21.971" y="28.321"/>
+<element name="X1" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="6.096" y="27.94" smashed="yes">
+<attribute name="OC_NEWARK" value="90F2624" x="48.006" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="142-0701-801" x="48.006" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="JOHNSON COMPONENTS" x="48.006" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1608592" x="48.006" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.731" y="34.29" size="1.778" layer="25"/>
 </element>
-<element name="X2" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="-41.91" y="50.8">
-<attribute name="OC_NEWARK" value="90F2624" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0701-801" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1608592" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="X2" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="44.704" y="37.846" smashed="yes" rot="R180">
+<attribute name="OC_NEWARK" value="90F2624" x="2.794" y="88.646" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0701-801" x="2.794" y="88.646" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="JOHNSON COMPONENTS" x="2.794" y="88.646" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1608592" x="2.794" y="88.646" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.069" y="31.496" size="1.778" layer="25" rot="R180"/>
 </element>
-<element name="X3" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="-41.91" y="69.85">
-<attribute name="OC_NEWARK" value="90F2624" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0701-801" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1608592" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="X3" library="con-coax" package="J502-ND-142-0701-801/806" value="SMA-142-0701-801/806" x="44.831" y="18.288" smashed="yes" rot="R180">
+<attribute name="OC_NEWARK" value="90F2624" x="2.921" y="88.138" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0701-801" x="2.921" y="88.138" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="JOHNSON COMPONENTS" x="2.921" y="88.138" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1608592" x="2.921" y="88.138" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.196" y="11.938" size="1.778" layer="25" rot="R180"/>
 </element>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="OUT2">
+<polygon width="0.05" layer="1" thermals="no">
+<vertex x="37.452" y="37.82"/>
+<vertex x="37.45" y="37.814"/>
+<vertex x="37.452" y="37.816"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="36.674" y="39.922"/>
+<vertex x="42.43" y="39.922"/>
+<vertex x="42.43" y="35.45"/>
+<vertex x="36.656" y="35.45"/>
+<vertex x="36.656" y="39.906"/>
+</polygon>
+</signal>
+<signal name="OUT3">
+<polygon width="0" layer="1" thermals="no">
+<vertex x="38.254" y="20"/>
+<vertex x="43.556" y="20"/>
+<vertex x="43.556" y="16.482"/>
+<vertex x="38.262" y="16.482"/>
+<vertex x="38.262" y="19.992"/>
+</polygon>
+</signal>
+<signal name="IN">
+<contactref element="U$1" pad="P$1"/>
 <contactref element="X1" pad="1"/>
+<polygon width="0.05" layer="1" thermals="no">
+<vertex x="13.38" y="29.656"/>
+<vertex x="8.092" y="29.656"/>
+<vertex x="8.092" y="26.342"/>
+<vertex x="13.394" y="26.342"/>
+<vertex x="13.394" y="29.64"/>
+</polygon>
 </signal>
-<signal name="N$2">
-<contactref element="X2" pad="1"/>
+<signal name="N$4">
+</signal>
+<signal name="O2">
 <contactref element="U$1" pad="P$2"/>
-<wire x1="-13.75" y1="15.27" x2="-39.3446" y2="50.8" width="0" layer="19" extent="1-1"/>
+<contactref element="X2" pad="1"/>
+<wire x1="38.499284375" y1="37.799909375" x2="42.1386" y2="37.846" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$3">
+<signal name="O3">
 <contactref element="U$1" pad="P$3"/>
 <contactref element="X3" pad="1"/>
-<wire x1="-13.75" y1="9.27" x2="-39.3446" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="38.470346875" y1="18.2289" x2="42.2656" y2="18.288" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
