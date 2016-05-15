@@ -6756,22 +6756,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="218.44" y1="114.3" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="2.4GHZ" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="91.44" y1="142.24" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="FILTER1" gate="G$1" pin="IN"/>
-<wire x1="91.44" y1="152.4" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="2.6GHZ" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$3"/>
-<wire x1="91.44" y1="137.16" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="FILTER2" gate="G$1" pin="IN"/>
-<wire x1="91.44" y1="124.46" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="X1" gate="G1" pin="1"/>
@@ -6818,6 +6802,22 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="203.2" y1="152.4" x2="198.12" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="142.24" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="2.4GHZ" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="FILTER1" gate="G$1" pin="IN"/>
+<wire x1="91.44" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="142.24" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="2.6GHZ" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$3"/>
+<pinref part="FILTER2" gate="G$1" pin="IN"/>
+<wire x1="91.44" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="137.16" x2="106.68" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
