@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1521,204 +1521,111 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="C1" library="rcl" package="C0603" value="100 pF" x="-53.34" y="90.17"/>
 <element name="C2" library="rcl" package="C0603" value="100 pF" x="-60.96" y="90.17"/>
-<element name="FILTER1" library="ECE532_Parts" package="1IN_PIPE_CAP" value="2.4GHz" x="55.88" y="54.61"/>
-<element name="FILTER2" library="ECE532_Parts" package="1IN_PIPE_CAP" value="2.6GHz" x="55.88" y="22.86"/>
-<element name="INPUT1" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="82.39184375" y="5.47493125" rot="R90"/>
-<element name="INPUT2" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="80.632034375" y="72.472134375" rot="R90"/>
-<element name="R2" library="rcl" package="M1206" value="10k" x="68.325234375" y="6.64483125"/>
+<element name="FILTER1" library="ECE532_Parts" package="1IN_PIPE_CAP" value="" x="58.42" y="16.51"/>
+<element name="FILTER2" library="ECE532_Parts" package="1IN_PIPE_CAP" value="" x="58.42" y="50.8"/>
+<element name="INPUT" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="-64.77" y="88.9"/>
+<element name="INPUT1" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="-69.85" y="88.9"/>
+<element name="INPUT2" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="-74.93" y="88.9"/>
+<element name="R1" library="rcl" package="M1206" value="10k" x="-39.37" y="91.44"/>
+<element name="R2" library="rcl" package="M1206" value="10k" x="-44.45" y="91.44"/>
+<element name="R3" library="rcl" package="R0603" value="" x="-80.01" y="88.9"/>
 <element name="R4" library="rcl" package="R0603" value="" x="-15.24" y="96.52"/>
-<element name="U$1" library="ECE532_Parts" package="WSPLITTER_2.5GHZ" value="WSPLITTER_2.5GHZ" x="11.43" y="38.1"/>
+<element name="U$1" library="ECE532_Parts" package="WSPLITTER_2.5GHZ" value="WSPLITTER_2.5GHZ" x="11.43" y="33.02"/>
+<element name="U$2" library="ECE532_Parts" package="HSMS-2850" value="HSMS-2850" x="-22.86" y="90.17"/>
 <element name="U$3" library="ECE532_Parts" package="HSMS-2850" value="HSMS-2850" x="-34.29" y="90.17"/>
-<element name="X1" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="-1.27" y="36.83">
-<attribute name="OC_NEWARK" value="16F3627" x="-1.27" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="JOHNSON COMPONENTS" x="-1.27" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0711-821" x="-1.27" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1019328" x="-1.27" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="X1" library="con-coax" package="J502-ND-142-0711-821/826" value="SMA-142-0711-821/826" x="-1.27" y="31.75">
+<attribute name="OC_NEWARK" value="16F3627" x="-1.27" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="JOHNSON COMPONENTS" x="-1.27" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="142-0711-821" x="-1.27" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1019328" x="-1.27" y="31.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$2" library="ECE532_Parts" package="HSMS-2850" value="HSMS-2850" x="-75.1216" y="-4.99533125"/>
-<element name="R1" library="rcl" package="M1206" value="10k" x="-74.5282" y="-9.5207625"/>
-<element name="C1" library="rcl" package="C0603" value="100 pF" x="-70.5282" y="-8.8857625"/>
-<element name="INPUT3" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="-74.93" y="-15.5837625"/>
-<element name="INPUT4" library="ECE532_Parts" package="TEE_TL1" value="TEE_TL1" x="-70.7368" y="-15.5837625"/>
-<element name="R3" library="rcl" package="R0603" value="" x="-67.1418" y="-14.89709375"/>
 </elements>
 <signals>
 <signal name="GND1">
+<contactref element="C1" pad="2"/>
+<contactref element="R1" pad="1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="X1" pad="G@1"/>
 <contactref element="X1" pad="G@2"/>
 <contactref element="X1" pad="G@3"/>
 <contactref element="X1" pad="G@4"/>
-<contactref element="C1" pad="2"/>
-<contactref element="R1" pad="1"/>
-<wire x1="-69.6782" y1="-8.8857625" x2="-75.9282" y2="-9.5207625" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8454" y1="32.3354" x2="-69.6782" y2="-8.8857625" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8454" y1="32.3354" x2="0.8454" y2="32.3354" width="0" layer="19" extent="1-16"/>
-<wire x1="0.8454" y1="41.3246" x2="0.8454" y2="32.3354" width="0" layer="19" extent="1-1"/>
-<wire x1="0.8454" y1="41.3246" x2="0.8454" y2="41.3246" width="0" layer="19" extent="1-16"/>
-<wire x1="66.925234375" y1="6.64483125" x2="0.8454" y2="41.3246" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.11" y1="90.17" x2="66.925234375" y2="6.64483125" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.85" y1="91.44" x2="-40.77" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.49" y1="90.17" x2="-45.85" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.11" y1="90.17" x2="-52.49" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8454" y1="36.2446" x2="-60.11" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8454" y1="36.2446" x2="0.8454" y2="36.2446" width="0" layer="19" extent="1-16"/>
+<wire x1="0.8454" y1="27.2554" x2="0.8454" y2="36.2446" width="0" layer="19" extent="1-1"/>
+<wire x1="0.8454" y1="27.2554" x2="0.8454" y2="27.2554" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$3">
+<contactref element="R1" pad="2"/>
+<contactref element="C1" pad="1"/>
+<contactref element="U$2" pad="C"/>
+<wire x1="-37.97" y1="91.44" x2="-21.8694" y2="91.186" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.19" y1="90.17" x2="-37.97" y2="91.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="INPUT">
+<contactref element="INPUT" pad="T_L"/>
+<contactref element="INPUT" pad="T_B"/>
+<contactref element="R3" pad="2"/>
+<contactref element="INPUT" pad="T_R"/>
+<contactref element="U$2" pad="A"/>
+<wire x1="-63.025" y1="90.17" x2="-22.8346" y2="89.154" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.77" y1="88.425" x2="-63.025" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-66.515" y1="90.17" x2="-64.77" y2="88.425" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.16" y1="88.9" x2="-66.515" y2="90.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R2" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="U$3" pad="C"/>
-<wire x1="69.725234375" y1="6.64483125" x2="-33.2994" y2="91.186" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.81" y1="90.17" x2="69.725234375" y2="6.64483125" width="0" layer="19" extent="1-1"/>
+<wire x1="-43.05" y1="91.44" x2="-33.2994" y2="91.186" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.81" y1="90.17" x2="-43.05" y2="91.44" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="2.6FIL">
+<signal name="INPUT1">
 <contactref element="INPUT2" pad="T_B"/>
 <contactref element="INPUT2" pad="T_L"/>
 <contactref element="INPUT2" pad="T_R"/>
 <contactref element="R4" pad="1"/>
 <contactref element="FILTER2" pad="OUT"/>
-<wire x1="81.107034375" y1="72.472134375" x2="79.362034375" y2="74.217134375" width="0" layer="19" extent="1-1"/>
-<wire x1="79.362034375" y1="70.727134375" x2="81.107034375" y2="72.472134375" width="0" layer="19" extent="1-1"/>
-<wire x1="81.88" y1="22.86" x2="79.362034375" y2="70.727134375" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.09" y1="96.52" x2="79.362034375" y2="74.217134375" width="0" layer="19" extent="1-1"/>
+<wire x1="84.42" y1="50.8" x2="-16.09" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-73.185" y1="90.17" x2="-16.09" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.93" y1="88.425" x2="-73.185" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.675" y1="90.17" x2="-74.93" y2="88.425" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="2.6TUNED">
+<signal name="INPUT11">
+<contactref element="R3" pad="1"/>
+<contactref element="FILTER1" pad="OUT"/>
+<wire x1="84.42" y1="16.51" x2="-80.86" y2="88.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="INPUT2">
 <contactref element="INPUT1" pad="T_R"/>
 <contactref element="U$3" pad="A"/>
 <contactref element="INPUT1" pad="T_L"/>
 <contactref element="INPUT1" pad="T_B"/>
 <contactref element="R4" pad="2"/>
 <wire x1="-34.2646" y1="89.154" x2="-14.39" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="81.12184375" y1="3.72993125" x2="-14.39" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="82.86684375" y1="5.47493125" x2="81.12184375" y2="3.72993125" width="0" layer="19" extent="1-1"/>
-<wire x1="81.12184375" y1="7.21993125" x2="82.86684375" y2="5.47493125" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.105" y1="90.17" x2="-34.2646" y2="89.154" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.85" y1="88.425" x2="-68.105" y2="90.17" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.595" y1="90.17" x2="-69.85" y2="88.425" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="P$2"/>
 <contactref element="FILTER1" pad="IN"/>
-<wire x1="27.958284375" y1="47.578909375" x2="29.88" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="32.42" y1="16.51" x2="27.958284375" y2="42.498909375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="P$3"/>
 <contactref element="FILTER2" pad="IN"/>
-<wire x1="29.88" y1="22.86" x2="27.929346875" y2="28.0079" width="0" layer="19" extent="1-1"/>
+<wire x1="32.42" y1="50.8" x2="27.929346875" y2="22.9279" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="X1" pad="1"/>
 <contactref element="U$1" pad="P$1"/>
-<wire x1="1.686509375" y1="37.905796875" x2="0.8454" y2="36.83" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="INPUT4">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="79.3795625" y="60.1702"/>
-<vertex x="79.3795625" y="62.1702"/>
-<vertex x="82.8695625" y="62.1702"/>
-<vertex x="82.8695625" y="60.1702"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="82.8698" y="65.63921875"/>
-<vertex x="79.3798" y="65.63921875"/>
-<vertex x="80.7248" y="67.63921875"/>
-<vertex x="81.6248" y="67.63921875"/>
-</polygon>
-</signal>
-<signal name="INPUT5">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="81.097709375" y="74.214825"/>
-<vertex x="77.607709375" y="74.214825"/>
-<vertex x="79.152709375" y="76.214825"/>
-<vertex x="79.552709375" y="76.214825"/>
-</polygon>
-<via x="98.12138125" y="71.268784375" extent="1-16" drill="0.4"/>
-<via x="98.12138125" y="72.568784375" extent="1-16" drill="0.4"/>
-<via x="98.12138125" y="73.768784375" extent="1-16" drill="0.4"/>
-<wire x1="98.12138125" y1="72.568784375" x2="98.12138125" y2="73.768784375" width="0" layer="19" extent="1-1"/>
-<wire x1="98.12138125" y1="71.268784375" x2="98.12138125" y2="72.568784375" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$3">
-<contactref element="R1" pad="2"/>
-<contactref element="C1" pad="1"/>
-<contactref element="U$2" pad="C"/>
-<wire x1="-71.3782" y1="-8.8857625" x2="-73.1282" y2="-9.5207625" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.131" y1="-3.97933125" x2="-73.1282" y2="-9.5207625" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="2.4FIL">
-<contactref element="INPUT4" pad="T_B"/>
-<contactref element="INPUT4" pad="T_L"/>
-<contactref element="INPUT4" pad="T_R"/>
-<contactref element="R3" pad="1"/>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="82.865478125" y="62.154759375"/>
-<vertex x="82.865478125" y="65.644759375"/>
-<vertex x="97.665478125" y="65.644759375"/>
-<vertex x="97.665478125" y="62.154759375"/>
-</polygon>
-<wire x1="-72.4818" y1="-14.3137625" x2="-70.7368" y2="-16.0587625" width="0" layer="19" extent="1-1"/>
-<wire x1="-68.9918" y1="-14.3137625" x2="-70.7368" y2="-16.0587625" width="0" layer="19" extent="1-1"/>
-<wire x1="-67.9918" y1="-14.89709375" x2="-68.9918" y2="-14.3137625" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="2.4TUNED">
-<contactref element="INPUT3" pad="T_R"/>
-<contactref element="U$2" pad="A"/>
-<contactref element="INPUT3" pad="T_L"/>
-<contactref element="INPUT3" pad="T_B"/>
-<contactref element="R3" pad="2"/>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="97.967421875" y="70.735340625"/>
-<vertex x="81.1041375" y="70.735340625"/>
-<vertex x="81.1041375" y="74.225340625"/>
-<vertex x="97.967421875" y="74.225340625"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="77.620796875" y="70.732321875"/>
-<vertex x="81.110796875" y="70.732321875"/>
-<vertex x="79.765796875" y="68.732321875"/>
-<vertex x="78.865796875" y="68.732321875"/>
-</polygon>
-<wire x1="-74.93" y1="-16.0587625" x2="-76.675" y2="-14.3137625" width="0" layer="19" extent="1-1"/>
-<wire x1="-73.185" y1="-14.3137625" x2="-74.93" y2="-16.0587625" width="0" layer="19" extent="1-1"/>
-<wire x1="-66.2918" y1="-14.89709375" x2="-73.185" y2="-14.3137625" width="0" layer="19" extent="1-1"/>
-<wire x1="-75.0962" y1="-6.01133125" x2="-76.675" y2="-14.3137625" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="INPUT7">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="82.865478125" y="3.734759375"/>
-<vertex x="82.865478125" y="7.224759375"/>
-<vertex x="97.665478125" y="7.224759375"/>
-<vertex x="97.665478125" y="3.734759375"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="79.3795625" y="1.7502"/>
-<vertex x="79.3795625" y="3.7502"/>
-<vertex x="82.8695625" y="3.7502"/>
-<vertex x="82.8695625" y="1.7502"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="82.8698" y="7.21921875"/>
-<vertex x="79.3798" y="7.21921875"/>
-<vertex x="80.7248" y="9.21921875"/>
-<vertex x="81.6248" y="9.21921875"/>
-</polygon>
-</signal>
-<signal name="INPUT8">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="96.24718125" y="32.23443125"/>
-<vertex x="96.24718125" y="15.371146875"/>
-<vertex x="92.75718125" y="15.371146875"/>
-<vertex x="92.75718125" y="32.23443125"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="92.767696875" y="15.36471875"/>
-<vertex x="92.767696875" y="11.87471875"/>
-<vertex x="90.767696875" y="13.41971875"/>
-<vertex x="90.767696875" y="13.81971875"/>
-</polygon>
-<polygon width="0" layer="1" thermals="no">
-<vertex x="96.2502" y="11.88780625"/>
-<vertex x="96.2502" y="15.37780625"/>
-<vertex x="98.2502" y="14.03280625"/>
-<vertex x="98.2502" y="13.13280625"/>
-</polygon>
-<via x="95.7137375" y="32.388390625" extent="1-16" drill="0.4"/>
-<via x="94.4137375" y="32.388390625" extent="1-16" drill="0.4"/>
-<via x="93.2137375" y="32.388390625" extent="1-16" drill="0.4"/>
+<wire x1="0.8454" y1="31.75" x2="1.686509375" y2="32.825796875" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

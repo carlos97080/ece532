@@ -6604,12 +6604,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="FILTER1" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device=""/>
 <part name="FILTER2" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device=""/>
 <part name="U$1" library="ECE532_Parts" deviceset="WSPLITTER_2.5GHZ" device=""/>
-<part name="U$2" library="ECE532_Parts" deviceset="HSMS-2850" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100 pF"/>
-<part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
-<part name="SUPPLY2" library="supply2" deviceset="GND1" device=""/>
-<part name="INPUT" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
 <part name="U$3" library="ECE532_Parts" deviceset="HSMS-2850" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100 pF"/>
@@ -6617,10 +6611,17 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
 <part name="INPUT1" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
 <part name="INPUT2" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="X1" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND1" device=""/>
+<part name="U$2" library="ECE532_Parts" deviceset="HSMS-2850" device=""/>
+<part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100 pF"/>
+<part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="GND1" device=""/>
+<part name="INPUT3" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="INPUT4" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -6632,12 +6633,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="FILTER1" gate="G$1" x="132.08" y="152.4"/>
 <instance part="FILTER2" gate="G$1" x="132.08" y="124.46"/>
 <instance part="U$1" gate="G$1" x="71.12" y="139.7"/>
-<instance part="U$2" gate="G$1" x="223.52" y="149.86" smashed="yes"/>
-<instance part="R1" gate="G$1" x="251.46" y="144.78" rot="R90"/>
-<instance part="C1" gate="G$1" x="236.22" y="147.32"/>
-<instance part="SUPPLY1" gate="G$1" x="236.22" y="137.16"/>
-<instance part="SUPPLY2" gate="G$1" x="251.46" y="134.62"/>
-<instance part="INPUT" gate="G$1" x="210.82" y="149.86"/>
 <instance part="U$3" gate="G$1" x="223.52" y="124.46" smashed="yes"/>
 <instance part="R2" gate="G$1" x="251.46" y="119.38" rot="R90"/>
 <instance part="C2" gate="G$1" x="236.22" y="121.92"/>
@@ -6645,25 +6640,22 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="SUPPLY5" gate="G$1" x="251.46" y="109.22"/>
 <instance part="INPUT1" gate="G$1" x="210.82" y="124.46"/>
 <instance part="INPUT2" gate="G$1" x="177.8" y="124.46"/>
-<instance part="R3" gate="G$1" x="190.5" y="149.86"/>
 <instance part="R4" gate="G$1" x="193.04" y="124.46"/>
 <instance part="X1" gate="G1" x="60.96" y="139.7"/>
 <instance part="SUPPLY3" gate="G$1" x="63.5" y="129.54"/>
+<instance part="U$2" gate="G$1" x="223.52" y="152.4" smashed="yes"/>
+<instance part="R1" gate="G$1" x="251.46" y="147.32" rot="R90"/>
+<instance part="C1" gate="G$1" x="236.22" y="149.86"/>
+<instance part="SUPPLY1" gate="G$1" x="236.22" y="139.7"/>
+<instance part="SUPPLY2" gate="G$1" x="251.46" y="137.16"/>
+<instance part="INPUT3" gate="G$1" x="210.82" y="152.4"/>
+<instance part="INPUT4" gate="G$1" x="177.8" y="152.4"/>
+<instance part="R3" gate="G$1" x="193.04" y="152.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND1" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY1" gate="G$1" pin="GND1"/>
-<wire x1="236.22" y1="142.24" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="SUPPLY2" gate="G$1" pin="GND1"/>
-<wire x1="251.46" y1="139.7" x2="251.46" y2="137.16" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="G$1" pin="GND1"/>
@@ -6679,30 +6671,15 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="63.5" y1="137.16" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="GND1"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="149.86" x2="251.46" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="C"/>
-<wire x1="226.06" y1="149.86" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="INPUT" class="0">
-<segment>
-<pinref part="INPUT" gate="G$1" pin="T_L"/>
-<pinref part="INPUT" gate="G$1" pin="T_B"/>
-<wire x1="210.82" y1="142.24" x2="210.82" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="139.7" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY1" gate="G$1" pin="GND1"/>
+<wire x1="236.22" y1="144.78" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="INPUT" gate="G$1" pin="T_R"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
-<wire x1="218.44" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="SUPPLY2" gate="G$1" pin="GND1"/>
+<wire x1="251.46" y1="142.24" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6728,14 +6705,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="185.42" y1="116.84" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="FILTER2" gate="G$1" pin="OUT"/>
-</segment>
-</net>
-<net name="INPUT11" class="0">
-<segment>
-<wire x1="157.48" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="FILTER1" gate="G$1" pin="OUT"/>
-<wire x1="157.48" y1="149.86" x2="157.48" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INPUT2" class="0">
@@ -6775,6 +6744,46 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="X1" gate="G1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <wire x1="63.5" y1="139.7" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="152.4" x2="251.46" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="C"/>
+<wire x1="226.06" y1="152.4" x2="236.22" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INPUT3" class="0">
+<segment>
+<pinref part="INPUT4" gate="G$1" pin="T_B"/>
+<pinref part="INPUT4" gate="G$1" pin="T_L"/>
+<wire x1="170.18" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="152.4" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="INPUT4" gate="G$1" pin="T_R"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="144.78" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="152.4" x2="157.48" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INPUT6" class="0">
+<segment>
+<pinref part="INPUT3" gate="G$1" pin="T_R"/>
+<pinref part="U$2" gate="G$1" pin="A"/>
+<wire x1="218.44" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="INPUT3" gate="G$1" pin="T_L"/>
+<pinref part="INPUT3" gate="G$1" pin="T_B"/>
+<wire x1="210.82" y1="144.78" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="142.24" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="152.4" x2="198.12" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="142.24" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

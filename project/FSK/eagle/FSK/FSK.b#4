@@ -1635,6 +1635,26 @@ design rules under a new name.</description>
 <vertex x="37.1302" y="88.4104375"/>
 </polygon>
 </signal>
+<signal name="INPUT4">
+<polygon width="0" layer="1" thermals="no">
+<vertex x="87.554759375" y="49.214521875"/>
+<vertex x="91.044759375" y="49.214521875"/>
+<vertex x="91.044759375" y="34.414521875"/>
+<vertex x="87.554759375" y="34.414521875"/>
+</polygon>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="85.5702" y="52.7004375"/>
+<vertex x="87.5702" y="52.7004375"/>
+<vertex x="87.5702" y="49.2104375"/>
+<vertex x="85.5702" y="49.2104375"/>
+</polygon>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="91.03921875" y="49.2102"/>
+<vertex x="91.03921875" y="52.7002"/>
+<vertex x="93.03921875" y="51.3552"/>
+<vertex x="93.03921875" y="50.4552"/>
+</polygon>
+</signal>
 </signals>
 </board>
 </drawing>

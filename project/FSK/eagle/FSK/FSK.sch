@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -85,14 +99,14 @@
 <wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
 <wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -116,8 +130,8 @@
 <packages>
 <package name="1IN_PIPE_CAP">
 <circle x="0" y="0" radius="15.875" width="0" layer="1"/>
-<circle x="6.35" y="0" radius="1.905" width="0.0254" layer="20"/>
-<circle x="-6.35" y="0" radius="1.905" width="0.0254" layer="20"/>
+<circle x="5.08" y="0" radius="1.905" width="0.0254" layer="20"/>
+<circle x="-5.08" y="0" radius="1.905" width="0.0254" layer="20"/>
 <circle x="22.225" y="0" radius="1.905" width="0.0254" layer="20"/>
 <circle x="-22.225" y="0" radius="1.905" width="0.0254" layer="20"/>
 <smd name="IN" x="-26" y="0" dx="3.49" dy="0.8" layer="1" rot="R90"/>
@@ -6304,6 +6318,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
+<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
 <wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
 <wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
 <wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
@@ -6327,10 +6342,10 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
 <wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
 <smd name="1" x="2.1154" y="0" dx="4.191" dy="3.49" layer="1"/>
-<smd name="G@1" x="2.1154" y="4.4946" dx="4.191" dy="2.667" layer="1"/>
-<smd name="G@2" x="2.1154" y="-4.4946" dx="4.191" dy="2.667" layer="1"/>
-<smd name="G@4" x="2.1154" y="-4.4946" dx="4.191" dy="2.667" layer="16"/>
-<smd name="G@3" x="2.1154" y="4.4946" dx="4.191" dy="2.667" layer="16"/>
+<smd name="G@1" x="2.1154" y="3.4946" dx="4.191" dy="1.5" layer="1"/>
+<smd name="G@2" x="2.1154" y="-3.4946" dx="4.191" dy="1.5" layer="1"/>
+<smd name="G@4" x="2.1154" y="-3.4946" dx="4.191" dy="1.5" layer="16"/>
+<smd name="G@3" x="2.1154" y="3.4946" dx="4.191" dy="2" layer="16"/>
 <text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
@@ -6609,8 +6624,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100 pF"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
-<part name="INPUT1" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
-<part name="INPUT2" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="2.6TUNED" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="2.6FIL" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="X1" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND1" device=""/>
@@ -6619,9 +6634,13 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100 pF"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND1" device=""/>
-<part name="INPUT3" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
-<part name="INPUT4" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="2.4TUNED" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="2.4FIL" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="X2" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
+<part name="X3" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
+<part name="X4" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
+<part name="X5" library="con-coax" deviceset="SMA-" device="142-0711-821/826"/>
 </parts>
 <sheets>
 <sheet>
@@ -6638,19 +6657,33 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="C2" gate="G$1" x="236.22" y="121.92"/>
 <instance part="SUPPLY4" gate="G$1" x="236.22" y="111.76"/>
 <instance part="SUPPLY5" gate="G$1" x="251.46" y="109.22"/>
-<instance part="INPUT1" gate="G$1" x="210.82" y="124.46"/>
-<instance part="INPUT2" gate="G$1" x="177.8" y="124.46"/>
+<instance part="2.6TUNED" gate="G$1" x="210.82" y="124.46"/>
+<instance part="2.6FIL" gate="G$1" x="177.8" y="124.46"/>
 <instance part="R4" gate="G$1" x="193.04" y="124.46"/>
-<instance part="X1" gate="G1" x="60.96" y="139.7"/>
+<instance part="X1" gate="G1" x="60.96" y="139.7" smashed="yes">
+<attribute name="NAME" x="58.42" y="143.002" size="1.778" layer="95"/>
+</instance>
 <instance part="SUPPLY3" gate="G$1" x="63.5" y="129.54"/>
 <instance part="U$2" gate="G$1" x="223.52" y="152.4" smashed="yes"/>
 <instance part="R1" gate="G$1" x="251.46" y="147.32" rot="R90"/>
 <instance part="C1" gate="G$1" x="236.22" y="149.86"/>
 <instance part="SUPPLY1" gate="G$1" x="236.22" y="139.7"/>
 <instance part="SUPPLY2" gate="G$1" x="251.46" y="137.16"/>
-<instance part="INPUT3" gate="G$1" x="210.82" y="152.4"/>
-<instance part="INPUT4" gate="G$1" x="177.8" y="152.4"/>
+<instance part="2.4TUNED" gate="G$1" x="210.82" y="152.4"/>
+<instance part="2.4FIL" gate="G$1" x="177.8" y="152.4"/>
 <instance part="R3" gate="G$1" x="193.04" y="152.4"/>
+<instance part="X2" gate="G1" x="96.52" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="99.822" y="180.34" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="X3" gate="G1" x="96.52" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="93.218" y="96.52" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="X4" gate="G1" x="160.02" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="156.718" y="96.52" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="X5" gate="G1" x="160.02" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="163.322" y="180.34" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6693,13 +6726,13 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </net>
 <net name="2.6FIL" class="0">
 <segment>
-<pinref part="INPUT2" gate="G$1" pin="T_B"/>
-<pinref part="INPUT2" gate="G$1" pin="T_L"/>
+<pinref part="2.6FIL" gate="G$1" pin="T_B"/>
+<pinref part="2.6FIL" gate="G$1" pin="T_L"/>
 <wire x1="170.18" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="124.46" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="116.84" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="116.84" x2="185.42" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="INPUT2" gate="G$1" pin="T_R"/>
+<pinref part="2.6FIL" gate="G$1" pin="T_R"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="116.84" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
@@ -6709,11 +6742,11 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </net>
 <net name="2.6TUNED" class="0">
 <segment>
-<pinref part="INPUT1" gate="G$1" pin="T_R"/>
+<pinref part="2.6TUNED" gate="G$1" pin="T_R"/>
 <pinref part="U$3" gate="G$1" pin="A"/>
 <wire x1="218.44" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="INPUT1" gate="G$1" pin="T_L"/>
-<pinref part="INPUT1" gate="G$1" pin="T_B"/>
+<pinref part="2.6TUNED" gate="G$1" pin="T_L"/>
+<pinref part="2.6TUNED" gate="G$1" pin="T_B"/>
 <wire x1="210.82" y1="116.84" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="114.3" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="114.3" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
@@ -6723,7 +6756,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="218.44" y1="114.3" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="2.4GHZ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$2"/>
 <wire x1="91.44" y1="142.24" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
@@ -6731,7 +6764,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="91.44" y1="152.4" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="2.6GHZ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
 <wire x1="91.44" y1="137.16" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
@@ -6757,26 +6790,27 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </net>
 <net name="2.4FIL" class="0">
 <segment>
-<pinref part="INPUT4" gate="G$1" pin="T_B"/>
-<pinref part="INPUT4" gate="G$1" pin="T_L"/>
+<pinref part="2.4FIL" gate="G$1" pin="T_B"/>
+<pinref part="2.4FIL" gate="G$1" pin="T_L"/>
 <wire x1="170.18" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="152.4" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="144.78" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="INPUT4" gate="G$1" pin="T_R"/>
+<pinref part="2.4FIL" gate="G$1" pin="T_R"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="152.4" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="144.78" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="152.4" x2="157.48" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="FILTER1" gate="G$1" pin="OUT"/>
+<wire x1="157.48" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="2.4TUNED" class="0">
 <segment>
-<pinref part="INPUT3" gate="G$1" pin="T_R"/>
+<pinref part="2.4TUNED" gate="G$1" pin="T_R"/>
 <pinref part="U$2" gate="G$1" pin="A"/>
 <wire x1="218.44" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="INPUT3" gate="G$1" pin="T_L"/>
-<pinref part="INPUT3" gate="G$1" pin="T_B"/>
+<pinref part="2.4TUNED" gate="G$1" pin="T_L"/>
+<pinref part="2.4TUNED" gate="G$1" pin="T_B"/>
 <wire x1="210.82" y1="144.78" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="142.24" x2="203.2" y2="152.4" width="0.1524" layer="91"/>

@@ -1627,6 +1627,14 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="P$1"/>
 <wire x1="0.8454" y1="31.75" x2="1.686509375" y2="32.825796875" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="INPUT3">
+<polygon width="0" layer="1" thermals="no">
+<vertex x="37.1302" y="91.9004375"/>
+<vertex x="39.1302" y="91.9004375"/>
+<vertex x="39.1302" y="88.4104375"/>
+<vertex x="37.1302" y="88.4104375"/>
+</polygon>
+</signal>
 </signals>
 </board>
 </drawing>
