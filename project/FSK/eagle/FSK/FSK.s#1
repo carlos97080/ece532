@@ -6601,8 +6601,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FILTER1" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device="" value="2.4GHz"/>
-<part name="FILTER2" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device="" value="2.6GHz"/>
+<part name="FILTER1" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device=""/>
+<part name="FILTER2" library="ECE532_Parts" deviceset="1IN_PIPE_CAP" device=""/>
 <part name="U$1" library="ECE532_Parts" deviceset="WSPLITTER_2.5GHZ" device=""/>
 <part name="U$3" library="ECE532_Parts" deviceset="HSMS-2850" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
@@ -6691,7 +6691,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="226.06" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="2.6FIL" class="0">
+<net name="INPUT1" class="0">
 <segment>
 <pinref part="INPUT2" gate="G$1" pin="T_B"/>
 <pinref part="INPUT2" gate="G$1" pin="T_L"/>
@@ -6707,7 +6707,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="FILTER2" gate="G$1" pin="OUT"/>
 </segment>
 </net>
-<net name="2.6TUNED" class="0">
+<net name="INPUT2" class="0">
 <segment>
 <pinref part="INPUT1" gate="G$1" pin="T_R"/>
 <pinref part="U$3" gate="G$1" pin="A"/>
@@ -6755,7 +6755,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="226.06" y1="152.4" x2="236.22" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="2.4FIL" class="0">
+<net name="INPUT3" class="0">
 <segment>
 <pinref part="INPUT4" gate="G$1" pin="T_B"/>
 <pinref part="INPUT4" gate="G$1" pin="T_L"/>
@@ -6770,7 +6770,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="167.64" y1="152.4" x2="157.48" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="2.4TUNED" class="0">
+<net name="INPUT6" class="0">
 <segment>
 <pinref part="INPUT3" gate="G$1" pin="T_R"/>
 <pinref part="U$2" gate="G$1" pin="A"/>
