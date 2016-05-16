@@ -2631,44 +2631,12 @@ design rules under a new name.</description>
 <vertex x="34.3892125" y="28.293584375"/>
 </polygon>
 </signal>
-<signal name="N$11">
-<polygon width="0" layer="1">
-<vertex x="24.1483125" y="49.5604125"/>
-<vertex x="24.1483125" y="46.0704125"/>
-<vertex x="26.0933125" y="47.5154125"/>
-<vertex x="26.0933125" y="48.1154125"/>
-</polygon>
-</signal>
 <signal name="IN1">
 <polygon width="0" layer="1" thermals="no">
 <vertex x="38.22821875" y="30.78680625"/>
 <vertex x="38.22821875" y="27.29680625"/>
 <vertex x="45.20821875" y="27.29680625"/>
 <vertex x="45.20821875" y="30.78680625"/>
-</polygon>
-</signal>
-<signal name="N$2">
-<polygon width="0" layer="1">
-<vertex x="27.92" y="52.35"/>
-<vertex x="27.92" y="48.86"/>
-<vertex x="38.39" y="48.86"/>
-<vertex x="38.39" y="52.35"/>
-</polygon>
-</signal>
-<signal name="IN2">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="33.03588125" y="58.78800625"/>
-<vertex x="33.03588125" y="55.29800625"/>
-<vertex x="31.970421875" y="55.296771875"/>
-<vertex x="31.968909375" y="55.8892375"/>
-</polygon>
-</signal>
-<signal name="IN3">
-<polygon width="0" layer="1" thermals="no">
-<vertex x="24.358340625" y="58.87128125"/>
-<vertex x="24.358340625" y="55.38128125"/>
-<vertex x="25.4238" y="55.380046875"/>
-<vertex x="25.4253125" y="55.9725125"/>
 </polygon>
 </signal>
 <signal name="N$1">
