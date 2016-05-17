@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -72,6 +72,17 @@
 <text x="-3.5" y="3.53" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.4" y="1.93" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TEE_TL1">
+<polygon width="0" layer="1">
+<vertex x="-1.745" y="3.015"/>
+<vertex x="1.745" y="3.015"/>
+<vertex x="1.745" y="-0.475"/>
+<vertex x="-1.745" y="-0.475"/>
+</polygon>
+<smd name="T_B" x="0" y="-0.475" dx="3" dy="0.5" layer="1"/>
+<smd name="T_R" x="1.745" y="1.27" dx="1.27" dy="0.5" layer="1" rot="R90"/>
+<smd name="T_L" x="-1.745" y="1.27" dx="1.27" dy="0.5" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PSA4-5043+">
@@ -84,6 +95,19 @@
 <pin name="G1" x="7.62" y="-12.7" length="middle" rot="R90"/>
 <wire x1="7.623859375" y1="-7.59634375" x2="7.623859375" y2="-5.799975" width="0.1778" layer="94"/>
 <wire x1="7.62893125" y1="7.622934375" x2="7.62893125" y2="5.838278125" width="0.1778" layer="94"/>
+</symbol>
+<symbol name="TEE_TL1">
+<wire x1="-3.037840625" y1="0.7239" x2="-3.037840625" y2="-1.1811" width="0.254" layer="94"/>
+<wire x1="-3.037840625" y1="-1.1811" x2="-1.132840625" y2="-1.1811" width="0.254" layer="94"/>
+<wire x1="-1.132840625" y1="-1.1811" x2="-1.132840625" y2="-2.4511" width="0.254" layer="94"/>
+<wire x1="-1.132840625" y1="-2.4511" x2="1.407159375" y2="-2.4511" width="0.254" layer="94"/>
+<wire x1="1.407159375" y1="-2.4511" x2="1.407159375" y2="-1.1811" width="0.254" layer="94"/>
+<wire x1="1.407159375" y1="-1.1811" x2="3.312159375" y2="-1.1811" width="0.254" layer="94"/>
+<wire x1="3.312159375" y1="-1.1811" x2="3.312159375" y2="0.7239" width="0.254" layer="94"/>
+<wire x1="3.312159375" y1="0.7239" x2="-3.037840625" y2="0.7239" width="0.254" layer="94"/>
+<pin name="T_L" x="-7.62" y="0" length="middle"/>
+<pin name="T_B" x="0" y="-7.62" length="middle" rot="R90"/>
+<pin name="T_R" x="7.62" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -98,6 +122,23 @@
 <connect gate="G$1" pin="G2" pad="G2"/>
 <connect gate="G$1" pin="RFIN" pad="RFIN"/>
 <connect gate="G$1" pin="RFO" pad="RFO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEE_TL1">
+<gates>
+<gate name="G$1" symbol="TEE_TL1" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEE_TL1">
+<connects>
+<connect gate="G$1" pin="T_B" pad="T_B"/>
+<connect gate="G$1" pin="T_L" pad="T_L"/>
+<connect gate="G$1" pin="T_R" pad="T_R"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6190,6 +6231,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <part name="X3" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
 <part name="L1" library="resistor" deviceset="L-US" device="L3230M" value="820nH"/>
+<part name="IN1" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
+<part name="OUT2" library="ECE532_Parts" deviceset="TEE_TL1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6205,14 +6248,20 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <instance part="SUPPLY3" gate="G$1" x="81.28" y="35.56"/>
 <instance part="SUPPLY4" gate="G$1" x="73.66" y="68.58"/>
 <instance part="C4" gate="G$1" x="121.92" y="53.34" rot="R90"/>
-<instance part="X1" gate="G1" x="38.1" y="53.34"/>
-<instance part="X2" gate="G1" x="137.16" y="53.34" rot="MR0"/>
-<instance part="SUPPLY5" gate="G$1" x="40.64" y="45.72"/>
-<instance part="SUPPLY6" gate="G$1" x="132.08" y="45.72"/>
+<instance part="X1" gate="G1" x="22.86" y="53.34" smashed="yes">
+<attribute name="NAME" x="20.32" y="56.642" size="1.778" layer="95"/>
+</instance>
+<instance part="X2" gate="G1" x="152.4" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="154.94" y="56.642" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="25.4" y="45.72"/>
+<instance part="SUPPLY6" gate="G$1" x="149.86" y="45.72"/>
 <instance part="X3" gate="-1" x="76.2" y="93.98" rot="R90"/>
 <instance part="X3" gate="-2" x="78.74" y="93.98" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="76.2" y="83.82"/>
 <instance part="L1" gate="G$1" x="114.3" y="76.2"/>
+<instance part="IN1" gate="G$1" x="35.56" y="53.34"/>
+<instance part="OUT2" gate="G$1" x="137.16" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -6241,14 +6290,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="AGND"/>
-<wire x1="132.08" y1="48.26" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="48.26" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G1" pin="2"/>
-<wire x1="132.08" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G1" pin="2"/>
 <pinref part="SUPPLY5" gate="G$1" pin="AGND"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="50.8" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="AGND"/>
@@ -6283,25 +6331,47 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pinref part="L1" gate="G$1" pin="2"/>
 </segment>
 </net>
+<net name="IN1" class="0">
+<segment>
+<pinref part="X1" gate="G1" pin="1"/>
+<pinref part="IN1" gate="G$1" pin="T_L"/>
+<wire x1="25.4" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="53.34" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="IN1" gate="G$1" pin="T_R"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="IN1" gate="G$1" pin="T_B"/>
+<wire x1="35.56" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="45.72" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
+<junction x="45.72" y="53.34"/>
+<junction x="35.56" y="45.72"/>
+<junction x="27.94" y="53.34"/>
+</segment>
+</net>
+<net name="OUT2" class="0">
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="OUT2" gate="G$1" pin="T_L"/>
+<wire x1="127" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="OUT2" gate="G$1" pin="T_B"/>
+<wire x1="137.16" y1="45.72" x2="127" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="45.72" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="45.72" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="OUT2" gate="G$1" pin="T_R"/>
+<pinref part="X2" gate="G1" pin="1"/>
+<wire x1="144.78" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<junction x="147.32" y="53.34"/>
+<wire x1="147.32" y1="53.34" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
+<junction x="127" y="53.34"/>
+</segment>
+</net>
 <net name="IN" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="RFIN"/>
 <wire x1="53.34" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D_OUT" class="0">
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="X2" gate="G1" pin="1"/>
-<wire x1="127" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D_IN" class="0">
-<segment>
-<pinref part="X1" gate="G1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
