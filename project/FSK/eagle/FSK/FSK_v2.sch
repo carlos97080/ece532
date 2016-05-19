@@ -248,9 +248,9 @@
 <smd name="T_L" x="-1.745" y="1.27" dx="1.27" dy="0.5" layer="1" rot="R90"/>
 </package>
 <package name="CD54HC4511">
-<wire x1="3.45" y1="-7.52" x2="-3.45" y2="-7.52" width="0.2032" layer="21"/>
-<wire x1="-3.45" y1="4.98" x2="3.45" y2="4.98" width="0.2032" layer="21"/>
-<wire x1="3.45" y1="4.98" x2="3.45" y2="-7.52" width="0.2032" layer="21"/>
+<wire x1="0.05" y1="-7.52" x2="-3.45" y2="-7.52" width="0.2032" layer="21"/>
+<wire x1="-3.45" y1="4.98" x2="0.05" y2="4.98" width="0.2032" layer="21"/>
+<wire x1="0.05" y1="4.98" x2="0.05" y2="-7.52" width="0.2032" layer="21"/>
 <wire x1="-3.45" y1="-7.52" x2="-3.45" y2="4.98" width="0.2032" layer="21"/>
 <circle x="-2.54" y="3.81" radius="0.4065" width="0" layer="21"/>
 <smd name="1" x="-4.445" y="3.175" dx="0.6" dy="1.2" layer="1" rot="R270"/>
@@ -261,16 +261,16 @@
 <smd name="6" x="-4.445" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R270"/>
 <smd name="7" x="-4.445" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R270"/>
 <smd name="8" x="-4.445" y="-5.715" dx="0.6" dy="1.2" layer="1" rot="R270"/>
-<smd name="9" x="4.445" y="-5.715" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="10" x="4.445" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="11" x="4.445" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="12" x="4.445" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="13" x="4.445" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="14" x="4.445" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="15" x="4.445" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="16" x="4.445" y="3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="0.995" y="-5.715" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="0.995" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="11" x="0.995" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="12" x="0.995" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="13" x="0.995" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="14" x="0.995" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="15" x="0.995" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="16" x="0.995" y="3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <text x="-3.175" y="5.715" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="3.175" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+<text x="-1.635" y="3.175" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 <rectangle x1="-4.3" y1="2.5" x2="-3.85" y2="3.85" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="1.23" x2="-3.85" y2="2.58" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="-0.04" x2="-3.85" y2="1.31" layer="51" rot="R90"/>
@@ -279,19 +279,19 @@
 <rectangle x1="-4.3" y1="-3.85" x2="-3.85" y2="-2.5" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="-5.12" x2="-3.85" y2="-3.77" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="-6.39" x2="-3.85" y2="-5.04" layer="51" rot="R90"/>
-<rectangle x1="3.85" y1="-6.39" x2="4.3" y2="-5.04" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-5.12" x2="4.3" y2="-3.77" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-3.85" x2="4.3" y2="-2.5" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-2.58" x2="4.3" y2="-1.23" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-1.31" x2="4.3" y2="0.04" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-0.04" x2="4.3" y2="1.31" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="1.23" x2="4.3" y2="2.58" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="2.5" x2="4.3" y2="3.85" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-6.39" x2="0.9" y2="-5.04" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-5.12" x2="0.9" y2="-3.77" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-3.85" x2="0.9" y2="-2.5" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-2.58" x2="0.9" y2="-1.23" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-1.31" x2="0.9" y2="0.04" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-0.04" x2="0.9" y2="1.31" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="1.23" x2="0.9" y2="2.58" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="2.5" x2="0.9" y2="3.85" layer="51" rot="R270"/>
 </package>
 <package name="TSM983ESE+T">
-<wire x1="3.45" y1="-6.25" x2="-3.45" y2="-6.25" width="0.2032" layer="21"/>
-<wire x1="-3.45" y1="6.25" x2="3.45" y2="6.25" width="0.2032" layer="21"/>
-<wire x1="3.45" y1="6.25" x2="3.45" y2="-6.25" width="0.2032" layer="21"/>
+<wire x1="0.15" y1="-6.25" x2="-3.45" y2="-6.25" width="0.2032" layer="21"/>
+<wire x1="-3.45" y1="6.25" x2="0.15" y2="6.25" width="0.2032" layer="21"/>
+<wire x1="0.15" y1="6.25" x2="0.15" y2="-6.25" width="0.2032" layer="21"/>
 <wire x1="-3.45" y1="-6.25" x2="-3.45" y2="6.25" width="0.2032" layer="21"/>
 <circle x="-2.54" y="5.08" radius="0.4065" width="0" layer="21"/>
 <smd name="1" x="-4.445" y="4.445" dx="0.6" dy="1.2" layer="1" rot="R270"/>
@@ -302,14 +302,14 @@
 <smd name="6" x="-4.445" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R270"/>
 <smd name="7" x="-4.445" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R270"/>
 <smd name="8" x="-4.445" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R270"/>
-<smd name="9" x="4.445" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="10" x="4.445" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="11" x="4.445" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="12" x="4.445" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="13" x="4.445" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="14" x="4.445" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="15" x="4.445" y="3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
-<smd name="16" x="4.445" y="4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="9" x="0.995" y="-4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="10" x="0.995" y="-3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="11" x="0.995" y="-1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="12" x="0.995" y="-0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="13" x="0.995" y="0.635" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="14" x="0.995" y="1.905" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="15" x="0.995" y="3.175" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="16" x="0.995" y="4.445" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 <text x="-3.175" y="6.985" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="4.445" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 <rectangle x1="-4.3" y1="3.77" x2="-3.85" y2="5.12" layer="51" rot="R90"/>
@@ -320,14 +320,14 @@
 <rectangle x1="-4.3" y1="-2.58" x2="-3.85" y2="-1.23" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="-3.85" x2="-3.85" y2="-2.5" layer="51" rot="R90"/>
 <rectangle x1="-4.3" y1="-5.12" x2="-3.85" y2="-3.77" layer="51" rot="R90"/>
-<rectangle x1="3.85" y1="-5.12" x2="4.3" y2="-3.77" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-3.85" x2="4.3" y2="-2.5" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-2.58" x2="4.3" y2="-1.23" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-1.31" x2="4.3" y2="0.04" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="-0.04" x2="4.3" y2="1.31" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="1.23" x2="4.3" y2="2.58" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="2.5" x2="4.3" y2="3.85" layer="51" rot="R270"/>
-<rectangle x1="3.85" y1="3.77" x2="4.3" y2="5.12" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-5.12" x2="0.9" y2="-3.77" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-3.85" x2="0.9" y2="-2.5" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-2.58" x2="0.9" y2="-1.23" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-1.31" x2="0.9" y2="0.04" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="-0.04" x2="0.9" y2="1.31" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="1.23" x2="0.9" y2="2.58" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="2.5" x2="0.9" y2="3.85" layer="51" rot="R270"/>
+<rectangle x1="0.45" y1="3.77" x2="0.9" y2="5.12" layer="51" rot="R270"/>
 </package>
 <package name="7S_DISPLAY">
 <wire x1="7.318" y1="-8.917" x2="-2.213" y2="-8.917" width="0.1524" layer="21"/>
@@ -7268,79 +7268,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="J502-ND-142-0701-801/806">
-<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
-Johnson Components&lt;br&gt;
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
-<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
-<smd name="1" x="2.5654" y="0" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
-<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
-<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
-<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
-</package>
 <package name="J502-ND-142-0701-851/861">
-<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
-Johnson Components&lt;br&gt;
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
-<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
-<smd name="1" x="2.5654" y="0" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
-<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
-<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
-<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
-</package>
-<package name="J502-ND-142-0701-871/876">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -7439,11 +7367,11 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="4.1" y1="3.85" x2="4.1" y2="4.65" width="0.2032" layer="51"/>
 <wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
 <wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
-<smd name="1" x="2.1154" y="0" dx="4.191" dy="3.49" layer="1"/>
-<smd name="G@1" x="2.1154" y="3.4946" dx="4.191" dy="1.5" layer="1"/>
-<smd name="G@2" x="2.1154" y="-3.4946" dx="4.191" dy="1.5" layer="1"/>
-<smd name="G@4" x="2.1154" y="-3.4946" dx="4.191" dy="1.5" layer="16"/>
-<smd name="G@3" x="2.1154" y="3.4946" dx="4.191" dy="2" layer="16"/>
+<smd name="1" x="2.1154" y="0" dx="4.191" dy="1.778" layer="1"/>
+<smd name="G@1" x="2.1154" y="3.4946" dx="4.191" dy="2.667" layer="1"/>
+<smd name="G@2" x="2.1154" y="-3.4946" dx="4.191" dy="2.667" layer="1"/>
+<smd name="G@4" x="2.1154" y="-3.4946" dx="4.191" dy="2.667" layer="16"/>
+<smd name="G@3" x="2.1154" y="3.4946" dx="4.191" dy="2.667" layer="16"/>
 <text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
@@ -7546,6 +7474,77 @@ Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-14207018
 <rectangle x1="3.75" y1="-0.5" x2="4.775" y2="0.5" layer="51" rot="R180"/>
 <rectangle x1="3.75" y1="-3.2432" x2="4.775" y2="-2.2432" layer="51" rot="R180"/>
 <rectangle x1="3.75" y1="-4.0814" x2="4.775" y2="-3.0814" layer="51" rot="R180"/>
+</package>
+<package name="J502-ND-142-0701-801/806">
+<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
+Johnson Components&lt;br&gt;
+Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
+<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
+<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
+<smd name="1" x="2.5654" y="0" dx="5.08" dy="3.49" layer="1"/>
+<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
+<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
+<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
+<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
+</package>
+<package name="J502-ND-142-0701-871/876">
+<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
+Johnson Components&lt;br&gt;
+Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
+<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
+<smd name="1" x="2.5654" y="0" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
+<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
+<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
+<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -8019,6 +8018,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="SUPPLY15" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND1" device=""/>
+<part name="R18" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8119,6 +8123,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="SUPPLY15" gate="G$1" x="265.43" y="90.17"/>
 <instance part="SUPPLY16" gate="G$1" x="347.98" y="83.82"/>
 <instance part="SUPPLY9" gate="G$1" x="226.06" y="66.04"/>
+<instance part="R18" gate="G$1" x="294.64" y="93.98" rot="R90"/>
+<instance part="R19" gate="G$1" x="273.05" y="50.8" rot="R180"/>
+<instance part="R20" gate="G$1" x="271.78" y="40.64" rot="R180"/>
+<instance part="P+6" gate="VCC" x="279.4" y="57.15"/>
+<instance part="P+7" gate="VCC" x="294.64" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -8353,6 +8362,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="60.96" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
+<junction x="287.02" y="71.12"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -8361,7 +8371,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="U$4" gate="G$1" pin="D0"/>
 <wire x1="297.18" y1="66.04" x2="312.42" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="OUTA"/>
-<wire x1="297.18" y1="83.82" x2="264.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="83.82" x2="294.64" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="294.64" y1="83.82" x2="264.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="83.82" x2="294.64" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -8402,13 +8415,32 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="X6" gate="-1" pin="S"/>
 <wire x1="281.94" y1="149.86" x2="284.48" y2="149.86" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="279.4" y1="54.61" x2="279.4" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="48.26" x2="278.13" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="276.86" y1="40.64" x2="278.13" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="278.13" y1="40.64" x2="278.13" y2="48.26" width="0.1524" layer="91"/>
+<junction x="278.13" y="48.26"/>
+<wire x1="278.13" y1="48.26" x2="278.13" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="I0"/>
 <wire x1="274.32" y1="73.66" x2="274.32" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="OUTB"/>
-<wire x1="274.32" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="78.74" x2="265.43" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="265.43" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="265.43" y1="78.74" x2="265.43" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="265.43" y1="40.64" x2="266.7" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8417,7 +8449,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="274.32" y1="68.58" x2="271.78" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="68.58" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="OUTC"/>
-<wire x1="271.78" y1="73.66" x2="264.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="73.66" x2="267.97" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="267.97" y1="73.66" x2="264.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="267.97" y1="73.66" x2="267.97" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
